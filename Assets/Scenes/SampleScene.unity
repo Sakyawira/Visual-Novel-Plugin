@@ -413,12 +413,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueLines:
-  - characterSprite: {fileID: 5216067620882622603, guid: 48bb4ec09ba51bd4cb8ddd9b92af299e, type: 3}
+  - characterSprite: {fileID: 21300000, guid: bcafd75928768c849a08fe29efc999a3, type: 3}
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
-    talkingText: Hi my name is
-  - characterSprite: {fileID: 207829613193613291, guid: 48bb4ec09ba51bd4cb8ddd9b92af299e, type: 3}
+    talkingText: Hi Jane. What's wrong ?
+  - characterSprite: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
-    talkingText: Sakya!
+    talkingText: Oh, Saki-kun...
+  - characterSprite: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
+    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
+    talkingText: It's nothing!
+  - characterSprite: {fileID: 21300000, guid: 9f5434ff8df9ac74dbb7e168e73630a6, type: 3}
+    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
+    talkingText: Hmm?
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1103474707}
   currentText: 
@@ -462,7 +468,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9053247960396450761, guid: 48bb4ec09ba51bd4cb8ddd9b92af299e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -653,7 +659,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Hmmmmm...
 --- !u!222 &1103474710
 CanvasRenderer:
   m_ObjectHideFlags: 0
