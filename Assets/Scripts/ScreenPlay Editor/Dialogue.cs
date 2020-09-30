@@ -22,6 +22,7 @@ public class Dialogue : MonoBehaviour
     private AudioSource SFXSource;
 
     // Text
+    public GameObject dialogueBox;
     public string currentText = "";
     private bool isTextTime = true;
     private int m = 0;
@@ -70,7 +71,7 @@ public class Dialogue : MonoBehaviour
         {
             TextVoice.PlayOneShot(TextBGM);
             currentText = Text.Substring(0, i);
-            this.GetComponent<Text>().text = currentText;
+            dialogueBox.GetComponent<Text>().text = currentText;
             yield return new WaitForSeconds(0.07f);
             if (i == Text.Length - 1)
             {
