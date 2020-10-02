@@ -412,17 +412,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f02076ecc075c45a87723a7872d11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - characterSprite: {fileID: 21300000, guid: bcafd75928768c849a08fe29efc999a3, type: 3}
+  - CharacterName: James
+    CharacterEmotion: 0
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Hi Jane. What's wrong ?
-  - characterSprite: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
+  - CharacterName: Selena
+    CharacterEmotion: 0
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Oh, Saki-kun...
-  - characterSprite: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
+  - CharacterName: Selena
+    CharacterEmotion: 3
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: It's nothing!
-  - characterSprite: {fileID: 21300000, guid: 9f5434ff8df9ac74dbb7e168e73630a6, type: 3}
+  - CharacterName: James
+    CharacterEmotion: 4
     talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Hmm?
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}

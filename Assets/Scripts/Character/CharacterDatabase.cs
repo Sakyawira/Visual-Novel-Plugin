@@ -6,6 +6,5 @@ using UnityEngine;
 [CreateAssetMenu (menuName ="Character Database", fileName = "New Character Database")]
 public class CharacterDatabase : ScriptableObject
 {
-    public Character[] Characters;
-   // public DictionaryOfStringAndInt EmotionSprites;
+    public List<Character> Characters;
 }

@@ -6,13 +6,17 @@ using UnityEngine.UI;
 [System.Serializable]
 public struct Line
 {
-    public Sprite characterSprite;
+    public string CharacterName; 
+    public Emotion CharacterEmotion;
     public AudioClip talkingClip;
     public string talkingText;
 }
 
 public class Dialogue : MonoBehaviour
 {
+    // To take the created ScriptableObject database
+    public CharacterDatabase CharacterDB;
+
     // Scripting System
     public Line[] DialogueLines;
 
@@ -62,7 +66,26 @@ public class Dialogue : MonoBehaviour
 
     void ChangeSprite()
     {
-        spriteRenderer.sprite = DialogueLines[m].characterSprite;
+         Character iCharacter = CharacterDB.Characters.Find(x => x.Name == DialogueLines[m].CharacterName);
+
+        switch (DialogueLines[m].CharacterEmotion)
+        {
+            case Emotion.Neutral:
+                spriteRenderer.sprite = iCharacter.Neutral;
+                break;
+            case Emotion.Angry:
+                spriteRenderer.sprite = iCharacter.Angry;
+                break;
+            case Emotion.Happy:
+                spriteRenderer.sprite = iCharacter.Happy;
+                break;
+            case Emotion.Joy:
+                spriteRenderer.sprite = iCharacter.Joy;
+                break;
+            case Emotion.Sad:
+                spriteRenderer.sprite = iCharacter.Sad;
+                break;
+        }
     }
 
     IEnumerator ShowText(string Text)
