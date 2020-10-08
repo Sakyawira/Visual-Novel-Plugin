@@ -32,14 +32,14 @@ public class Dialogue : MonoBehaviour
     private int m = 0;
 
     // Character Sprite
-    private SpriteRenderer spriteRenderer;
+    private Image spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         SFXSource = GetComponent<AudioSource>();
         TextVoice = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<Image>();
         m = 0;
     }
 
