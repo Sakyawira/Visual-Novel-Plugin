@@ -17,7 +17,7 @@ public class SceneEditor : EditorWindow
     //Sprite sprite;
 
    // public UnityEngine.Object source;
-    public UnityEngine.Object sprite;
+   // public UnityEngine.Object sprite;
 
     [MenuItem("Window/Scene Editor")]
     public static void ShowWindow()
@@ -30,8 +30,8 @@ public class SceneEditor : EditorWindow
     {
         // V loading all the fill tiles
         scenes = new List<SceneAsset>(Resources.LoadAll<SceneAsset>("Scenes"));
-
-        sprite = new Object();
+        spritesField = new List<UnityEngine.Object>();
+       // sprite = 
 
 
         //VisualElement root = rootVisualElement;
@@ -56,8 +56,10 @@ public class SceneEditor : EditorWindow
         for (int i = 0; i < scenes.Count; i++)
         {
             Debug.Log(i);
-            sprite = EditorGUILayout.ObjectField(scenes[i].name, sprite, typeof(Sprite), true);
-           // spritesField.Add(sprite);
+            UnityEngine.Object sprite = new Object();
+            spritesField.Add(sprite);
+
+            spritesField[i] = EditorGUILayout.ObjectField(scenes[i].name, spritesField[i], typeof(Sprite), true);
         }
 
         if (GUILayout.Button("Build"))
@@ -70,7 +72,7 @@ public class SceneEditor : EditorWindow
                 //FindObjectsOfType<Image>()
                 UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
                 Debug.Log(myimage.name);
-                myimage.sprite = (Sprite)sprite;
+                myimage.sprite = (Sprite)spritesField[i];
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
                 Debug.Log("Built!");
