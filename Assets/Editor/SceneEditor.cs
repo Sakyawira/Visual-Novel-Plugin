@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Rendering;
+using UnityEngine.UIElements;
+using UnityEditor.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneEditor : EditorWindow
 {
-   // string myString = "Hello World!";
-
-    // library of tiles we have. 
+    // Library of scenes we have. 
     static List<SceneAsset> scenes;
 
     List<UnityEngine.Object> spritesField;
+
+    //Sprite sprite;
 
    // public UnityEngine.Object source;
     public UnityEngine.Object sprite;
@@ -53,19 +56,24 @@ public class SceneEditor : EditorWindow
         for (int i = 0; i < scenes.Count; i++)
         {
             Debug.Log(i);
-            // objTile newItem = new objTile();
-            //  newItem.prefab = tileObjects[i];
-            // newItem.enabled = false;
-            // tiles.Add(newItem);
-            // GUILayout.image
-           // source = EditorGUILayout.ObjectField("BG", source, typeof(UnityEngine.Object), true);
             sprite = EditorGUILayout.ObjectField(scenes[i].name, sprite, typeof(Sprite), true);
            // spritesField.Add(sprite);
         }
 
         if (GUILayout.Button("Build"))
         {
-            Debug.Log("Built!");
+            for (int i = 0; i < scenes.Count; i++)
+            {
+                //Scene a = scenes[i];
+                //a.FindObjectsOfType<Image>();
+                EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
+                //FindObjectsOfType<Image>()
+                UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
+                Debug.Log(myimage.name);
+                myimage.sprite = (Sprite)sprite;
+                EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+            }
+                Debug.Log("Built!");
         }
 
     }
