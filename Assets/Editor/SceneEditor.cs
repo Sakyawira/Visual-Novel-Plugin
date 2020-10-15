@@ -75,7 +75,7 @@ public class SceneEditor : EditorWindow
                 myimage.sprite = (Sprite)spritesField[i];
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
-                Debug.Log("Built!");
+            Debug.Log("Built!");
         }
 
     }

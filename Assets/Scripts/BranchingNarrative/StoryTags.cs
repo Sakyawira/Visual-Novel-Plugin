@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[System.Serializable]
 public struct Branch
 {
     public List<string> Tags;
@@ -47,5 +49,12 @@ public class StoryTags : MonoBehaviour
             }
         }
         return new Branch();
+    }
+
+    void Update()
+    {
+        List<string> tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
+
+        Debug.Log(haveBranch(tags).SceneName);
     }
 }
