@@ -8,8 +8,9 @@ public struct Line
 {
     public string CharacterName; 
     public Emotion CharacterEmotion;
-    public AudioClip talkingClip;
+    // public AudioClip talkingClip;
     public string talkingText;
+    public List<Choice> Choices;
 }
 
 public class Dialogue : MonoBehaviour
@@ -27,6 +28,7 @@ public class Dialogue : MonoBehaviour
 
     // Text
     public GameObject dialogueBox;
+    public GameObject choiceBox;
     public string currentText = "";
     private bool isTextTime = true;
     private int m = 0;
@@ -52,6 +54,7 @@ public class Dialogue : MonoBehaviour
             {
                 PlayText();
                 ChangeSprite();
+                ShowChoice();
                 m++;
             }
         }
@@ -99,6 +102,24 @@ public class Dialogue : MonoBehaviour
             if (i == Text.Length - 1)
             {
                 isTextTime = true;
+            }
+        }
+    }
+
+    void ShowChoice()
+    {
+        if (m == DialogueLines.Length - 1)
+        {
+            if (DialogueLines[m].Choices.Count != 0)
+            {
+                string currentChoices = "";
+
+                foreach (Choice choice in DialogueLines[m].Choices)
+                {
+                    currentChoices += "          " + choice.ChoiceText;
+                }
+
+                choiceBox.GetComponent<Text>().text = currentChoices;
             }
         }
     }
