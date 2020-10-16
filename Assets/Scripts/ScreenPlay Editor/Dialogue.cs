@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -57,7 +58,8 @@ public class Dialogue : MonoBehaviour
             if (m == DialogueLines.Count && Choices.Count == 0)
             {
                 // Add Script to go to the next level
-                Debug.Log(GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel());
+                string NextLevel = GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel();
+                SceneManager.LoadScene(NextLevel);
             }
         }
 
