@@ -6,7 +6,7 @@ using UnityEngine;
 public struct Choice
 {
     public string ChoiceText;
-    public Dialogue DialogueBranch;
+    public List<Line> DialogueBranch;
 }
 
 //public class Choice : MonoBehaviour

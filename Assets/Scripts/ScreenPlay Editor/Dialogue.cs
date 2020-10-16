@@ -52,12 +52,35 @@ public class Dialogue : MonoBehaviour
         {
             if (m < DialogueLines.Count && isTextTime)
             {
-                PlayText();
-                ChangeSprite();
-                ShowChoice();
-                m++;
+                Skip();
             }
         }
+
+        if (m == DialogueLines.Count && Choices.Count != 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                DialogueLines = Choices[0].DialogueBranch;
+                Choices.Clear();
+                m = 0;
+                Skip();
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DialogueLines = Choices[1].DialogueBranch;
+                Choices.Clear();
+                m = 0;
+                Skip();
+            }
+        }
+    }
+
+    void Skip()
+    {
+        PlayText();
+        ChangeSprite();
+        ShowChoice();
+        m++;
     }
 
     void PlayText()

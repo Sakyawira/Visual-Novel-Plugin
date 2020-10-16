@@ -621,9 +621,15 @@ MonoBehaviour:
     talkingText: Hiks haiaiaiiayayayayyayayayya wiiii uuuu
   Choices:
   - ChoiceText: Ice cream
-    DialogueBranch: {fileID: 0}
+    DialogueBranch:
+    - CharacterName: Joseph
+      CharacterEmotion: 0
+      talkingText: Haha
   - ChoiceText: paddle pop
-    DialogueBranch: {fileID: 0}
+    DialogueBranch:
+    - CharacterName: Selena
+      CharacterEmotion: 0
+      talkingText: ...
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
   choiceBox: {fileID: 1103474707}
