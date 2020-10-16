@@ -317,7 +317,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 742, y: 417}
+  m_SizeDelta: {x: 1024, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566756537
 MonoBehaviour:
@@ -391,11 +391,11 @@ RectTransform:
   m_Father: {fileID: 1865988917}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 380, y: 418}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!82 &1063003885
 AudioSource:
   m_ObjectHideFlags: 0
@@ -508,22 +508,23 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 0
-    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Hi Jane. What's wrong ?
+    Choices: []
   - CharacterName: Selena
     CharacterEmotion: 0
-    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Oh, Saki-kun...
+    Choices: []
   - CharacterName: Selena
     CharacterEmotion: 3
-    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: It's nothing!
+    Choices: []
   - CharacterName: James
     CharacterEmotion: 4
-    talkingClip: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
     talkingText: Hmm?
+    Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1720045304}
+  choiceBox: {fileID: 0}
   currentText: 
 --- !u!114 &1063003887
 MonoBehaviour:
@@ -778,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
