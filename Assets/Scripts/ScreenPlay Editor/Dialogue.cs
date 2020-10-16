@@ -10,7 +10,6 @@ public struct Line
     public Emotion CharacterEmotion;
     // public AudioClip talkingClip;
     public string talkingText;
-    public List<Choice> Choices;
 }
 
 public class Dialogue : MonoBehaviour
@@ -19,7 +18,8 @@ public class Dialogue : MonoBehaviour
     public CharacterDatabase CharacterDB;
 
     // Scripting System
-    public Line[] DialogueLines;
+    public List<Line> DialogueLines;
+    public List<Choice> Choices;
 
     // Audio
     public AudioClip TextBGM;
@@ -50,7 +50,7 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (m < DialogueLines.Length && isTextTime)
+            if (m < DialogueLines.Count && isTextTime)
             {
                 PlayText();
                 ChangeSprite();
@@ -108,13 +108,13 @@ public class Dialogue : MonoBehaviour
 
     void ShowChoice()
     {
-        if (m == DialogueLines.Length - 1)
+        if (m == DialogueLines.Count - 1)
         {
-            if (DialogueLines[m].Choices.Count != 0)
+            if (Choices.Count != 0)
             {
                 string currentChoices = "";
 
-                foreach (Choice choice in DialogueLines[m].Choices)
+                foreach (Choice choice in Choices)
                 {
                     currentChoices += "          " + choice.ChoiceText;
                 }

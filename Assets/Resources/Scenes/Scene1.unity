@@ -607,27 +607,23 @@ MonoBehaviour:
   - CharacterName: James
     CharacterEmotion: 0
     talkingText: Hi Jane. What's wrong ?
-    Choices: []
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
-    Choices: []
   - CharacterName: Selena
     CharacterEmotion: 3
     talkingText: It's nothing!
-    Choices: []
   - CharacterName: James
     CharacterEmotion: 4
     talkingText: Hmm?
-    Choices: []
   - CharacterName: Nicole
     CharacterEmotion: 4
     talkingText: Hiks haiaiaiiayayayayyayayayya wiiii uuuu
-    Choices:
-    - ChoiceText: Pizza
-      DialogueBranch: {fileID: 0}
-    - ChoiceText: Burger
-      DialogueBranch: {fileID: 0}
+  Choices:
+  - ChoiceText: Ice cream
+    DialogueBranch: {fileID: 0}
+  - ChoiceText: paddle pop
+    DialogueBranch: {fileID: 0}
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
   choiceBox: {fileID: 1103474707}
