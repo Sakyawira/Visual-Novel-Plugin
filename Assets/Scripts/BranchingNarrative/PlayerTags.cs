@@ -15,4 +15,11 @@ public class PlayerTags : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
+    public void AddTag(string newTag)
+    {
+        if (Tags.Contains(newTag) == false && newTag != "")
+        {
+            Tags.Add(newTag);
+        }
+    }
 }

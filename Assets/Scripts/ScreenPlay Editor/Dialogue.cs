@@ -56,6 +56,7 @@ public class Dialogue : MonoBehaviour
             }
             if (m == DialogueLines.Count && Choices.Count == 0)
             {
+                // Add Script to go to the next level
                 Debug.Log(GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel());
             }
         }
@@ -65,13 +66,8 @@ public class Dialogue : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 DialogueLines = Choices[0].DialogueBranch;
-               
-                List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
 
-                if (player_Tags.Contains(Choices[0].Tag) == false && Choices[0].Tag != "")
-                {
-                    player_Tags.Add(Choices[0].Tag);
-                }
+                GameObject.Find("Player").GetComponent<PlayerTags>().AddTag(Choices[0].Tag);
 
                 Choices.Clear();
                 m = 0;
@@ -81,12 +77,7 @@ public class Dialogue : MonoBehaviour
             {
                 DialogueLines = Choices[1].DialogueBranch;
 
-                List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
-
-                if (player_Tags.Contains(Choices[1].Tag) == false && Choices[1].Tag != "")
-                {
-                    player_Tags.Add(Choices[1].Tag);
-                }
+                GameObject.Find("Player").GetComponent<PlayerTags>().AddTag(Choices[1].Tag);
 
                 Choices.Clear();
                 m = 0;
