@@ -61,6 +61,14 @@ public class Dialogue : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 DialogueLines = Choices[0].DialogueBranch;
+               
+                List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
+
+                if (player_Tags.Contains(Choices[0].Tag) == false)
+                {
+                    player_Tags.Add(Choices[0].Tag);
+                }
+
                 Choices.Clear();
                 m = 0;
                 Skip();
@@ -68,6 +76,14 @@ public class Dialogue : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DialogueLines = Choices[1].DialogueBranch;
+
+                List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
+
+                if (player_Tags.Contains(Choices[1].Tag) == false)
+                {
+                    player_Tags.Add(Choices[1].Tag);
+                }
+
                 Choices.Clear();
                 m = 0;
                 Skip();

@@ -7,9 +7,5 @@ public struct Choice
 {
     public string ChoiceText;
     public List<Line> DialogueBranch;
+    public string Tag;
 }
-
-//public class Choice : MonoBehaviour
-//{
-
-//}

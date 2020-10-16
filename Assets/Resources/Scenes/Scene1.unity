@@ -625,11 +625,13 @@ MonoBehaviour:
     - CharacterName: Joseph
       CharacterEmotion: 0
       talkingText: Haha
+    Tag: Milk
   - ChoiceText: paddle pop
     DialogueBranch:
     - CharacterName: Selena
       CharacterEmotion: 0
       talkingText: ...
+    Tag: Key
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
   choiceBox: {fileID: 1103474707}

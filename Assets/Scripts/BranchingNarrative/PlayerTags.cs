@@ -15,5 +15,4 @@ public class PlayerTags : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
-
 }
