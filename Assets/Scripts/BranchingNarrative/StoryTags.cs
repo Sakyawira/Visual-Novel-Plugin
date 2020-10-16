@@ -51,10 +51,10 @@ public class StoryTags : MonoBehaviour
         return new Branch();
     }
 
-    void Update()
+    public string GetNextLevel()
     {
         List<string> tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
 
-        Debug.Log(haveBranch(tags).SceneName);
+        return(haveBranch(tags).SceneName);
     }
 }

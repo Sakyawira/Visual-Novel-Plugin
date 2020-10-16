@@ -54,6 +54,10 @@ public class Dialogue : MonoBehaviour
             {
                 Skip();
             }
+            if (m == DialogueLines.Count && Choices.Count == 0)
+            {
+                Debug.Log(GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel());
+            }
         }
 
         if (m == DialogueLines.Count && Choices.Count != 0)
@@ -64,7 +68,7 @@ public class Dialogue : MonoBehaviour
                
                 List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
 
-                if (player_Tags.Contains(Choices[0].Tag) == false)
+                if (player_Tags.Contains(Choices[0].Tag) == false && Choices[0].Tag != "")
                 {
                     player_Tags.Add(Choices[0].Tag);
                 }
@@ -79,7 +83,7 @@ public class Dialogue : MonoBehaviour
 
                 List<string> player_Tags = GameObject.Find("Player").GetComponent<PlayerTags>().Tags;
 
-                if (player_Tags.Contains(Choices[1].Tag) == false)
+                if (player_Tags.Contains(Choices[1].Tag) == false && Choices[1].Tag != "")
                 {
                     player_Tags.Add(Choices[1].Tag);
                 }
