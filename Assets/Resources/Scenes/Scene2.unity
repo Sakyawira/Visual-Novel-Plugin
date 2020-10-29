@@ -357,20 +357,17 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 0
-    talkingText: Hi Jane. What's wrong ?
-    Choices: []
+    talkingText: In the previous scene you chose Ice Cream!
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
-    Choices: []
   - CharacterName: Selena
     CharacterEmotion: 3
     talkingText: It's nothing!
-    Choices: []
   - CharacterName: James
     CharacterEmotion: 4
     talkingText: Hmm?
-    Choices: []
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1668936011}
   choiceBox: {fileID: 0}
