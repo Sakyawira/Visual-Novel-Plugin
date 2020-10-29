@@ -5,15 +5,17 @@ using UnityEditor;
 
 public class ScreenPlayEditor : EditorWindow
 {
-    // Start is called before the first frame update
-    void Start()
+    // public UnityEngine. enumEditor = 
+    public Emotion curentEmotion;
+
+    //[MenuItem("Window/ScreenPlay Editor")]
+    public static void ShowWindow()
     {
-        
+        GetWindow<ScreenPlayEditor>("ScreenPlay Editor");
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnGUI()
     {
-        
+        curentEmotion = (Emotion)EditorGUILayout.EnumPopup(curentEmotion);
     }
 }

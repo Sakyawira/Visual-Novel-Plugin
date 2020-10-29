@@ -63,9 +63,9 @@ public class SceneEditor : EditorWindow
             spritesField.Add(sprite);
             spritesField[i] = EditorGUILayout.ObjectField(scenes[i].name, spritesField[i], typeof(Sprite), true);
 
-            if (GUILayout.Button("Edit ScreenPlay"))
+            if (GUILayout.Button("Edit ScreenPlay"/*, GUILayout.Height(40)*/))
             {
-
+                ScreenPlayEditor.ShowWindow();
             }
 
             EditorGUILayout.EndHorizontal();
