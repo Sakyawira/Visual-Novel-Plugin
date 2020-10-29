@@ -56,10 +56,19 @@ public class SceneEditor : EditorWindow
         for (int i = 0; i < scenes.Count; i++)
         {
             Debug.Log(i);
+
+            EditorGUILayout.BeginHorizontal();
+
             UnityEngine.Object sprite = new Object();
             spritesField.Add(sprite);
-
             spritesField[i] = EditorGUILayout.ObjectField(scenes[i].name, spritesField[i], typeof(Sprite), true);
+
+            if (GUILayout.Button("Edit ScreenPlay"))
+            {
+
+            }
+
+            EditorGUILayout.EndHorizontal();
         }
 
         if (GUILayout.Button("Build"))
