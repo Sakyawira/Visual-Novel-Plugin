@@ -31,8 +31,20 @@ public class SceneEditor : EditorWindow
         // V loading all the fill tiles
         scenes = new List<SceneAsset>(Resources.LoadAll<SceneAsset>("Scenes"));
         spritesField = new List<UnityEngine.Object>();
-       // sprite = 
+        // sprite = 
 
+        // Set the default images
+        for (int i = 0; i < scenes.Count; i++)
+        {
+            //Scene a = scenes[i];
+            //a.FindObjectsOfType<Image>();
+            EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
+            //FindObjectsOfType<Image>()
+            UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
+            Debug.Log(myimage.name);
+            spritesField.Add(myimage.sprite);
+            //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+        }
 
         //VisualElement root = rootVisualElement;
 
@@ -60,7 +72,7 @@ public class SceneEditor : EditorWindow
             EditorGUILayout.BeginHorizontal();
 
             UnityEngine.Object sprite = new Object();
-            spritesField.Add(sprite);
+            // spritesField.Add(sprite);
             spritesField[i] = EditorGUILayout.ObjectField(scenes[i].name, spritesField[i], typeof(Sprite), true);
 
             if (GUILayout.Button("Edit ScreenPlay"/*, GUILayout.Height(40)*/))
