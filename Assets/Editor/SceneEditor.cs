@@ -67,13 +67,15 @@ public class SceneEditor : EditorWindow
 
         for (int i = 0; i < scenes.Count; i++)
         {
-           // Debug.Log(i);
+            // Debug.Log(i);
+            UnityEngine.Object sprite = new Object();
+
+            // spritesField.Add(sprite);
+            EditorGUILayout.BeginVertical();
+            GUILayout.Label(scenes[i].name);
 
             EditorGUILayout.BeginHorizontal();
-
-            UnityEngine.Object sprite = new Object();
-            // spritesField.Add(sprite);
-            spritesField[i] = EditorGUILayout.ObjectField(scenes[i].name, spritesField[i], typeof(Sprite), true);
+            spritesField[i] = (Sprite)EditorGUILayout.ObjectField(/*scenes[i].name, */spritesField[i], typeof(Sprite), true, GUILayout.Width(50), GUILayout.Height(50));
 
             if (GUILayout.Button("Edit ScreenPlay"/*, GUILayout.Height(40)*/))
             {
@@ -81,6 +83,7 @@ public class SceneEditor : EditorWindow
             }
 
             EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndVertical();
         }
 
         if (GUILayout.Button("Build"))
