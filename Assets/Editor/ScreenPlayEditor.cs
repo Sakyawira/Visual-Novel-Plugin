@@ -30,12 +30,17 @@ public class ScreenPlayEditor : EditorWindow
         EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + sceneName + ".unity");
 
         SceneDialogueLines = new List<Line>();
+        SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
+        Debug.Log(SceneDialogueLines[0].CharacterName);
+
+        ResetMembers();
+    }
+
+    void ResetMembers()
+    {
         curentEmotion = new List<Emotion>();
         currentName = new List<string>();
         currentText = new List<string>();
-
-        SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
-        Debug.Log(SceneDialogueLines[0].CharacterName);
 
         for (int i = 0; i < SceneDialogueLines.Count; i++)
         {
@@ -58,7 +63,13 @@ public class ScreenPlayEditor : EditorWindow
             EditorGUILayout.EndHorizontal();
         }
 
-        if (GUILayout.Button("Build"))
+        if (GUILayout.Button("Add Line"))
+        {
+            SceneDialogueLines.Add(new Line());
+            ResetMembers();
+        }
+
+            if (GUILayout.Button("Build"))
         {
             for (int i = 0; i < SceneDialogueLines.Count; i++)
             {

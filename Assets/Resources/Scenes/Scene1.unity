@@ -603,9 +603,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Nicole
+  - CharacterName: James
     CharacterEmotion: 4
-    talkingText: Hi Jane. What's wrong ?
+    talkingText: hiiii
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
@@ -618,6 +618,9 @@ MonoBehaviour:
   - CharacterName: James
     CharacterEmotion: 3
     talkingText: wiiii
+  - CharacterName: Nicole
+    CharacterEmotion: 0
+    talkingText: ?????
   Choices:
   - ChoiceText: Ice cream
     DialogueBranch:
