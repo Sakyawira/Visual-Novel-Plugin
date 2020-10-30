@@ -6,10 +6,12 @@ using UnityEditor.SceneManagement;
 
 public class ScreenPlayEditor : EditorWindow
 {
-    // public UnityEngine. enumEditor = 
+    // Temporary Objects for Editor
     public static List<Emotion> curentEmotion;
+    public static List<string> currentName;
+    public static List<string> currentText;
 
-    // Scripting System
+    // References to Objects in Level
     public static List<Line> SceneDialogueLines;
     public static List<Choice> Choices;
 
@@ -29,6 +31,8 @@ public class ScreenPlayEditor : EditorWindow
 
         SceneDialogueLines = new List<Line>();
         curentEmotion = new List<Emotion>();
+        currentName = new List<string>();
+        currentText = new List<string>();
 
         SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
         Debug.Log(SceneDialogueLines[0].CharacterName);
@@ -36,6 +40,8 @@ public class ScreenPlayEditor : EditorWindow
         for (int i = 0; i < SceneDialogueLines.Count; i++)
         {
             curentEmotion.Add(SceneDialogueLines[i].CharacterEmotion);
+            currentName.Add(SceneDialogueLines[i].CharacterName);
+            currentText.Add(SceneDialogueLines[i].talkingText);
         }
     }
 
@@ -45,23 +51,22 @@ public class ScreenPlayEditor : EditorWindow
 
         for (int i = 0; i < SceneDialogueLines.Count; i++)
         {
+            EditorGUILayout.BeginHorizontal();
+            currentName[i] = EditorGUILayout.TextField(currentName[i]);
             curentEmotion[i] = (Emotion)EditorGUILayout.EnumPopup(curentEmotion[i]/*SceneDialogueLines[i].CharacterEmotion*/);
+            currentText[i] = EditorGUILayout.TextField(currentText[i]);
+            EditorGUILayout.EndHorizontal();
         }
 
         if (GUILayout.Button("Build"))
         {
             for (int i = 0; i < SceneDialogueLines.Count; i++)
             {
-                //Scene a = scenes[i];
-                //a.FindObjectsOfType<Image>();
-                // EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
-                //FindObjectsOfType<Image>()
-                // UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
-                // Debug.Log(myimage.name);
                 Line iLine = SceneDialogueLines[i];
+                iLine.CharacterName = currentName[i];
                 iLine.CharacterEmotion = curentEmotion[i];
+                iLine.talkingText = currentText[i];
                 SceneDialogueLines[i] = iLine;
-                //myimage.sprite = (Sprite)spritesField[i];
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
             Debug.Log("Built!");
