@@ -47,5 +47,24 @@ public class ScreenPlayEditor : EditorWindow
         {
             curentEmotion[i] = (Emotion)EditorGUILayout.EnumPopup(curentEmotion[i]/*SceneDialogueLines[i].CharacterEmotion*/);
         }
+
+        if (GUILayout.Button("Build"))
+        {
+            for (int i = 0; i < SceneDialogueLines.Count; i++)
+            {
+                //Scene a = scenes[i];
+                //a.FindObjectsOfType<Image>();
+                // EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
+                //FindObjectsOfType<Image>()
+                // UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
+                // Debug.Log(myimage.name);
+                Line iLine = SceneDialogueLines[i];
+                iLine.CharacterEmotion = curentEmotion[i];
+                SceneDialogueLines[i] = iLine;
+                //myimage.sprite = (Sprite)spritesField[i];
+                EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+            }
+            Debug.Log("Built!");
+        }
     }
 }

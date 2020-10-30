@@ -604,7 +604,7 @@ MonoBehaviour:
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
   - CharacterName: James
-    CharacterEmotion: 0
+    CharacterEmotion: 1
     talkingText: Hi Jane. What's wrong ?
   - CharacterName: Selena
     CharacterEmotion: 0
