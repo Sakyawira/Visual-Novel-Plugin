@@ -356,7 +356,7 @@ MonoBehaviour:
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
   - CharacterName: James
-    CharacterEmotion: 0
+    CharacterEmotion: 1
     talkingText: In the previous scene you chose Ice Cream!
   - CharacterName: Selena
     CharacterEmotion: 0

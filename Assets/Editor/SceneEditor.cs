@@ -67,7 +67,7 @@ public class SceneEditor : EditorWindow
 
         for (int i = 0; i < scenes.Count; i++)
         {
-            Debug.Log(i);
+           // Debug.Log(i);
 
             EditorGUILayout.BeginHorizontal();
 
@@ -77,7 +77,7 @@ public class SceneEditor : EditorWindow
 
             if (GUILayout.Button("Edit ScreenPlay"/*, GUILayout.Height(40)*/))
             {
-                ScreenPlayEditor.ShowWindow();
+                ScreenPlayEditor.ShowWindow(scenes[i].name);
             }
 
             EditorGUILayout.EndHorizontal();
