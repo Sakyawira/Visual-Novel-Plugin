@@ -30,6 +30,7 @@ public class Dialogue : MonoBehaviour
     // Text
     public GameObject dialogueBox;
     public GameObject choiceBox;
+    public GameObject choiceBox2;
     public string currentText = "";
     private bool isTextTime = true;
     private int m = 0;
@@ -148,15 +149,21 @@ public class Dialogue : MonoBehaviour
         {
             if (Choices.Count != 0)
             {
-                string currentChoices = "";
+                //string currentChoices = "";
 
-                foreach (Choice choice in Choices)
-                {
-                    currentChoices += "          " + choice.ChoiceText;
-                }
+                //foreach (Choice choice in Choices)
+                //{
+                //    currentChoices += "          " + choice.ChoiceText;
+                //}
 
-                choiceBox.GetComponent<Text>().text = currentChoices;
+                choiceBox.GetComponent<Text>().text = "Q. " + Choices[0].ChoiceText; //currentChoices;
+                choiceBox2.GetComponent<Text>().text = "E. " + Choices[1].ChoiceText;
             }
+        }
+        else
+        {
+            choiceBox.GetComponent<Text>().text = "";
+            choiceBox2.GetComponent<Text>().text = "";
         }
     }
 }
