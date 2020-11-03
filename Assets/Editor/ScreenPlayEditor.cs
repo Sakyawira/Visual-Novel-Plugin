@@ -55,20 +55,7 @@ public class ScreenPlayEditor : EditorWindow
     {
         //curentEmotion.Capacity = SceneDialogueLines.Count;
 
-        for (int i = 0; i < SceneDialogueLines.Count; i++)
-        {
-            EditorGUILayout.BeginHorizontal();
-            currentName[i] = EditorGUILayout.TextField(currentName[i]);
-            curentEmotion[i] = (Emotion)EditorGUILayout.EnumPopup(curentEmotion[i]/*SceneDialogueLines[i].CharacterEmotion*/);
-            currentText[i] = EditorGUILayout.TextField(currentText[i]);
-            EditorGUILayout.EndHorizontal();
-        }
-
-        if (GUILayout.Button("Add Line"))
-        {
-            SceneDialogueLines.Add(new Line());
-            ResetMembers();
-        }
+        DrawDialogue(SceneDialogueLines);
 
         DrawChoices();
 
@@ -76,11 +63,11 @@ public class ScreenPlayEditor : EditorWindow
         {
             for (int i = 0; i < SceneDialogueLines.Count; i++)
             {
-                Line iLine = SceneDialogueLines[i];
-                iLine.CharacterName = currentName[i];
-                iLine.CharacterEmotion = curentEmotion[i];
-                iLine.talkingText = currentText[i];
-                SceneDialogueLines[i] = iLine;
+                //Line iLine = SceneDialogueLines[i];
+                //iLine.CharacterName = currentName[i];
+                //iLine.CharacterEmotion = curentEmotion[i];
+                //iLine.talkingText = currentText[i];
+                //SceneDialogueLines[i] = iLine;
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
             //Debug.Log("Built!");
@@ -97,13 +84,38 @@ public class ScreenPlayEditor : EditorWindow
                 Choice iChoice = Choices[i];
 
                 iChoice.ChoiceText = EditorGUILayout.TextField(Choices[i].ChoiceText);
+                iChoice.Tag = EditorGUILayout.TextField(Choices[i].Tag);
+
                 Choices[i] = iChoice;
 
-
+                DrawDialogue(Choices[i].DialogueBranch);
 
             }
         }
-           
+    }
+
+    void DrawDialogue(List<Line> Lines)
+    {
+        for (int i = 0; i < Lines.Count; i++)
+        {
+            EditorGUILayout.BeginHorizontal();
+
+            Line iLine = Lines[i];
+
+            iLine.CharacterName = EditorGUILayout.TextField(Lines[i].CharacterName/*currentName[i]*/);
+            iLine.CharacterEmotion = (Emotion)EditorGUILayout.EnumPopup(Lines[i].CharacterEmotion);
+            iLine.talkingText = EditorGUILayout.TextField(Lines[i].talkingText);
+
+            Lines[i] = iLine;
+
+            EditorGUILayout.EndHorizontal();
+        }
+
+        if (GUILayout.Button("Add Line"))
+        {
+            Lines.Add(new Line());
+            ResetMembers();
+        }
     }
 }
 
