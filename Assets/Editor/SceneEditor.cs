@@ -41,7 +41,7 @@ public class SceneEditor : EditorWindow
             EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
             //FindObjectsOfType<Image>()
             UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
-            Debug.Log(myimage.name);
+            //Debug.Log(myimage.name);
             spritesField.Add(myimage.sprite);
             //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
@@ -63,7 +63,7 @@ public class SceneEditor : EditorWindow
         GUILayout.Label("Assign Backround to Scenes.", EditorStyles.boldLabel);
        // myString = EditorGUILayout.TextField("Name", myString);
 
-        Debug.Log(scenes.Count);
+        //Debug.Log(scenes.Count);
 
         for (int i = 0; i < scenes.Count; i++)
         {
@@ -76,13 +76,23 @@ public class SceneEditor : EditorWindow
 
             EditorGUILayout.BeginHorizontal();
             spritesField[i] = (Sprite)EditorGUILayout.ObjectField(/*scenes[i].name, */spritesField[i], typeof(Sprite), true, GUILayout.Width(50), GUILayout.Height(50));
+            EditorGUILayout.BeginVertical();
 
             if (GUILayout.Button("Edit ScreenPlay"/*, GUILayout.Height(40)*/))
             {
                 ScreenPlayEditor.ShowWindow(scenes[i].name);
             }
 
+            if (GUILayout.Button("Edit Branches"/*, GUILayout.Height(40)*/))
+            {
+                BranchesEditor.ShowWindow(scenes[i].name);
+            }
+
+            EditorGUILayout.EndVertical();
             EditorGUILayout.EndHorizontal();
+
+            //DrawNextScenes();
+
             EditorGUILayout.EndVertical();
         }
 
@@ -95,11 +105,11 @@ public class SceneEditor : EditorWindow
                 EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + scenes[i].name + ".unity");
                 //FindObjectsOfType<Image>()
                 UnityEngine.UI.Image myimage = GameObject.Find("BackgroundImage").GetComponent<UnityEngine.UI.Image>();
-                Debug.Log(myimage.name);
+                //Debug.Log(myimage.name);
                 myimage.sprite = (Sprite)spritesField[i];
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
-            Debug.Log("Built!");
+           // Debug.Log("Built!");
         }
 
     }

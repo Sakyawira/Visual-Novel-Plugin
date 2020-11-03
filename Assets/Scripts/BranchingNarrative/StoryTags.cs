@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public struct Branch
+public class Branch
 {
     public List<string> Tags;
     public string SceneName;
