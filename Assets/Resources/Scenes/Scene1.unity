@@ -660,8 +660,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: ' E. I love you'
+  m_Text: 
 --- !u!222 &770649458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hmmmmm...............................................................................................................
+  m_Text: 
 --- !u!222 &837042400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1007,7 +1007,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: Q. I hate you
+  m_Text: 
 --- !u!222 &1103474710
 CanvasRenderer:
   m_ObjectHideFlags: 0
