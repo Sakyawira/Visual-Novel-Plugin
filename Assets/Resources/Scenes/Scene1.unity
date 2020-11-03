@@ -356,7 +356,7 @@ MonoBehaviour:
     - Moon
     SceneName: Scene2
   - Tags:
-    - Moon
+    - Sun
     SceneName: Scene3
 --- !u!4 &486540776
 Transform:

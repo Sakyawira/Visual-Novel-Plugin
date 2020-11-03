@@ -31,7 +31,7 @@ public class ScreenPlayEditor : EditorWindow
 
         SceneDialogueLines = new List<Line>();
         SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
-        Debug.Log(SceneDialogueLines[0].CharacterName);
+       // Debug.Log(SceneDialogueLines[0].CharacterName);
 
         ResetMembers();
     }
@@ -69,7 +69,7 @@ public class ScreenPlayEditor : EditorWindow
             ResetMembers();
         }
 
-            if (GUILayout.Button("Build"))
+        if (GUILayout.Button("Build"))
         {
             for (int i = 0; i < SceneDialogueLines.Count; i++)
             {
@@ -80,7 +80,7 @@ public class ScreenPlayEditor : EditorWindow
                 SceneDialogueLines[i] = iLine;
                 EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             }
-            Debug.Log("Built!");
+            //Debug.Log("Built!");
         }
     }
 }

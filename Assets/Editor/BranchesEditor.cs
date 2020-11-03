@@ -26,6 +26,7 @@ public class BranchesEditor : EditorWindow
 
     void OnGUI()
     {
+        EditorGUILayout.BeginVertical();
         EditorGUILayout.BeginHorizontal();
         for (int i = 0; i < EditorBranches.Count; i++)
         {
@@ -39,6 +40,18 @@ public class BranchesEditor : EditorWindow
             EditorGUILayout.EndVertical();
         }
         EditorGUILayout.EndHorizontal();
+
+        DrawBuild();
+
+        EditorGUILayout.EndVertical();
+    }
+
+    void DrawBuild()
+    {
+        if (GUILayout.Button("Build"))
+        {
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+        }
     }
 
     void DrawNextScenes()
