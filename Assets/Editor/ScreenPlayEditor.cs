@@ -31,7 +31,8 @@ public class ScreenPlayEditor : EditorWindow
 
         SceneDialogueLines = new List<Line>();
         SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
-       // Debug.Log(SceneDialogueLines[0].CharacterName);
+        Choices = GameObject.Find("Character").GetComponent<Dialogue>().Choices;
+        // Debug.Log(SceneDialogueLines[0].CharacterName);
 
         ResetMembers();
     }
@@ -69,6 +70,8 @@ public class ScreenPlayEditor : EditorWindow
             ResetMembers();
         }
 
+        DrawChoices();
+
         if (GUILayout.Button("Build"))
         {
             for (int i = 0; i < SceneDialogueLines.Count; i++)
@@ -83,4 +86,25 @@ public class ScreenPlayEditor : EditorWindow
             //Debug.Log("Built!");
         }
     }
+
+    void DrawChoices()
+    {
+        
+        if (Choices.Count != 0)
+        {
+            for (int i = 0; i < Choices.Count; i++)
+            {
+                Choice iChoice = Choices[i];
+
+                iChoice.ChoiceText = EditorGUILayout.TextField(Choices[i].ChoiceText);
+                Choices[i] = iChoice;
+
+
+
+            }
+        }
+           
+    }
 }
+
+
