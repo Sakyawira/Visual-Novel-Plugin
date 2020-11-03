@@ -26,10 +26,19 @@ public class BranchesEditor : EditorWindow
 
     void OnGUI()
     {
+        EditorGUILayout.BeginHorizontal();
         for (int i = 0; i < EditorBranches.Count; i++)
         {
+            EditorGUILayout.BeginVertical();
             EditorBranches[i].SceneName = EditorGUILayout.TextField(EditorBranches[i].SceneName);
+           
+            for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
+            {
+                EditorBranches[i].Tags[j] = EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
+            }
+            EditorGUILayout.EndVertical();
         }
+        EditorGUILayout.EndHorizontal();
     }
 
     void DrawNextScenes()
