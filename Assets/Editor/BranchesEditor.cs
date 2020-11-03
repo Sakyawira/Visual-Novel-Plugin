@@ -75,8 +75,10 @@ public class BranchesEditor : EditorWindow
             {
                 for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
                 {
-                    /*EditorBranches[i].Tags[j] = */
-                      EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
+
+                    string iTagName =  EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
+
+                    EditorBranches[i].Tags[j] = iTagName;
                 }
             }
             AddTag(i);
