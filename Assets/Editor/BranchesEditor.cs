@@ -11,9 +11,13 @@ public class BranchesEditor : EditorWindow
     private static List<Branch> EditorBranches;
     public static List<Branch> SceneBranches;
 
+    public static List<string> SceneNames;
+
     void ResetMembers()
     {
         EditorBranches = new List<Branch>();
+        SceneNames = new List<string>();
+
         for (int i = 0; i < SceneBranches.Count; i++)
         {
             Branch iBranch = new Branch()/*SceneBranches[i]*/;
@@ -30,10 +34,10 @@ public class BranchesEditor : EditorWindow
            
             EditorBranches.Add(iBranch);
 
-
+            SceneNames.Add(SceneBranches[i].SceneName);
             //EditorBranches[i].SceneName = SceneBranches[i].SceneName;
             //EditorBranches[i].Tags = new List<string>();
-            
+
 
         }
     }
@@ -59,12 +63,20 @@ public class BranchesEditor : EditorWindow
         for (int i = 0; i < EditorBranches.Count; i++)
         {
             EditorGUILayout.BeginVertical();
-          /*  EditorBranches[i].SceneName =*/ EditorGUILayout.TextField(EditorBranches[i].SceneName);
-           if (EditorBranches[i].Tags != null)
+
+            //  SceneNames[i] = EditorGUILayout.TextField(SceneNames[i]);
+            string iSceneName = EditorGUILayout.TextField(EditorBranches[i].SceneName);
+            Branch IBran = EditorBranches[i];
+            IBran.SceneName = iSceneName;
+
+            EditorBranches[i] = IBran;
+
+            if (EditorBranches[i].Tags != null)
             {
                 for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
                 {
-                    /*EditorBranches[i].Tags[j] = */EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
+                    /*EditorBranches[i].Tags[j] = */
+                      EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
                 }
             }
             AddTag(i);
@@ -131,8 +143,8 @@ public class BranchesEditor : EditorWindow
 
                 SceneBranches[sceneID].Tags.Add("");
             }
+            ResetMembers();
         }
-        ResetMembers();
     }
 
     void DrawNextScenes()
