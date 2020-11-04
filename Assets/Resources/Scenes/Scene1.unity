@@ -614,17 +614,17 @@ MonoBehaviour:
     CharacterEmotion: 0
     talkingText: Yeah
   Choices:
-  - ChoiceText: Ice cream
+  - ChoiceText: Love
     DialogueBranch:
     - CharacterName: Nicole
       CharacterEmotion: 0
-      talkingText: Alright
+      talkingText: Love, huh?
     Tag: Sun
-  - ChoiceText: paddle pop
+  - ChoiceText: Hate
     DialogueBranch:
-    - CharacterName: Selena
+    - CharacterName: Nicole
       CharacterEmotion: 0
-      talkingText: Ok
+      talkingText: Hate, huh?
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}

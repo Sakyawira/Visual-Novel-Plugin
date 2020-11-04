@@ -711,23 +711,11 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 4
-    talkingText: You prefer Paddle Pop!
+    talkingText: I do enjoy love
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
-  Choices:
-  - ChoiceText: Ice cream
-    DialogueBranch:
-    - CharacterName: Joseph
-      CharacterEmotion: 0
-      talkingText: Haha
-    Tag: Sun
-  - ChoiceText: paddle pop
-    DialogueBranch:
-    - CharacterName: Selena
-      CharacterEmotion: 0
-      talkingText: ...
-    Tag: Sun
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 995557814}
   choiceBox: {fileID: 1728354183}

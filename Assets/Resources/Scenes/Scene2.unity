@@ -432,23 +432,11 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 4
-    talkingText: You prefer Ice Cream?
+    talkingText: I dont understand why you prefer hate
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
-  Choices:
-  - ChoiceText: Ice cream
-    DialogueBranch:
-    - CharacterName: Joseph
-      CharacterEmotion: 0
-      talkingText: Haha
-    Tag: Sun
-  - ChoiceText: paddle pop
-    DialogueBranch:
-    - CharacterName: Selena
-      CharacterEmotion: 0
-      talkingText: ...
-    Tag: Sun
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1099232697}
   choiceBox: {fileID: 1538942192}
@@ -829,18 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7cb4012e3eeab4fbc4b01f4a8da0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Branches:
-  - Tags:
-    - Sun
-    - Moon
-    SceneName: Scene3
-  - Tags:
-    - Sun
-    SceneName: Scene2
-  - Tags:
-    - 
-    - 
-    SceneName: Scene3
+  Branches: []
 --- !u!4 &1685735429
 Transform:
   m_ObjectHideFlags: 0
@@ -990,7 +967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fd5b0eb32faba14cbee430d60b73e55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6cbb0328b2450fc4eb5d898844e7fbb6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
