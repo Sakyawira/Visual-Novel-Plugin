@@ -108,6 +108,11 @@ public class ScreenPlayEditor : EditorWindow
 
             Lines[i] = iLine;
 
+            if (GUILayout.Button("Delete Line"))
+            {
+                Lines.Remove(Lines[i]);
+            }
+
             EditorGUILayout.EndHorizontal();
         }
 
