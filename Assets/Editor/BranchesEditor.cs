@@ -161,8 +161,8 @@ public class BranchesEditor : EditorWindow
            if (SceneBranches[sceneID].Tags == null)
             {
                 Debug.Log("was null");
-                Branch ibranch = new Branch();
-                ibranch.SceneName = SceneBranches[sceneID].SceneName;
+                Branch ibranch = SceneBranches[sceneID];
+                // ibranch.SceneName = SceneBranches[sceneID].SceneName;
                 ibranch.Tags = new List<string>();
 
                 SceneBranches[sceneID] = ibranch;
