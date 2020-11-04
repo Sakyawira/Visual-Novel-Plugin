@@ -608,14 +608,20 @@ MonoBehaviour:
     CharacterEmotion: 0
     talkingText: What do you want??
   - CharacterName: Selena
-    CharacterEmotion: 3
-    talkingText: Yeah
+    CharacterEmotion: 0
+    talkingText: exactly
   Choices:
   - ChoiceText: Love
-    DialogueBranch: []
+    DialogueBranch:
+    - CharacterName: Nicole
+      CharacterEmotion: 0
+      talkingText: Love!
     Tag: Sun
   - ChoiceText: Hate
-    DialogueBranch: []
+    DialogueBranch:
+    - CharacterName: Nicole
+      CharacterEmotion: 0
+      talkingText: Hate!
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}

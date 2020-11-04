@@ -55,8 +55,23 @@ public class ScreenPlayEditor : EditorWindow
         }
         for (int i = 0; i < SceneChoices.Count; i++)
         {
+           // Choice newChoice = new Choice();
+           // newChoice.ChoiceText = SceneChoices[i].ChoiceText;
+           // newChoice.Tag = SceneChoices[i].Tag;
+           // newChoice.DialogueBranch = new List<Line>();
             EditorChoices.Add(SceneChoices[i]);
         }
+        //for (int i = 0; i < EditorChoices.Count; i++)
+        //{
+        //   for(int j = 0; j < EditorChoices[i].DialogueBranch.Count; j++)
+        //    {
+        //        Line iLine = new Line();
+        //        iLine.CharacterEmotion = SceneChoices[i].DialogueBranch[j].CharacterEmotion;
+        //        iLine.CharacterName = SceneChoices[i].DialogueBranch[j].CharacterName;
+        //        iLine.CharacterName = SceneChoices[i].DialogueBranch[j].talkingText;
+        //        EditorChoices[i].DialogueBranch[j] = iLine;
+        //    }
+        //}
     }
 
     void OnGUI()
