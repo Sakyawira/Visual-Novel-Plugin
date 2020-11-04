@@ -109,8 +109,15 @@ public class ScreenPlayEditor : EditorWindow
             {
                 Choice iChoice = Choices[i];
 
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Label("Choice Text", GUILayout.MaxWidth(78));
                 iChoice.ChoiceText = EditorGUILayout.TextField(Choices[i].ChoiceText);
+                EditorGUILayout.EndHorizontal();
+
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Label("Given Tag", GUILayout.MaxWidth(78));
                 iChoice.Tag = EditorGUILayout.TextField(Choices[i].Tag);
+                EditorGUILayout.EndHorizontal();
 
                 Choices[i] = iChoice;
 
