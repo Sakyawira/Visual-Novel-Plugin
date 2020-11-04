@@ -73,7 +73,33 @@ public class ScreenPlayEditor : EditorWindow
             //Debug.Log("Built!");
         }
     }
+    //void AddTag(int sceneID)
+    //{
+    //    if (GUILayout.Button("Add Tag"))
+    //    {
+    //        if (SceneBranches[sceneID].Tags == null)
+    //        {
+    //            Debug.Log("was null");
+    //            Branch ibranch = new Branch();
+    //            ibranch.SceneName = SceneBranches[sceneID].SceneName;
+    //            ibranch.Tags = new List<string>();
 
+    //            SceneBranches[sceneID] = ibranch;
+
+    //            SceneBranches[sceneID].Tags.Add("");
+    //        }
+    //        else
+    //        {
+    //            //Debug.Log("was not null");
+    //            //Branch ibranch = new Branch();
+    //            //ibranch.SceneName = SceneBranches[sceneID].SceneName;
+    //            //ibranch.Tags = new List<string>();
+
+    //            SceneBranches[sceneID].Tags.Add("");
+    //        }
+    //        ResetMembers();
+    //    }
+    //}
     void DrawChoices()
     {
         
