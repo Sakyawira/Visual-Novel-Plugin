@@ -56,7 +56,7 @@ public class Dialogue : MonoBehaviour
             {
                 Skip();
             }
-            if (m == DialogueLines.Count && Choices.Count == 0)
+            else if (m == DialogueLines.Count && Choices.Count == 0)
             {
                 // Add Script to go to the next level
                 string NextLevel = GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel();
