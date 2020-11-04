@@ -612,16 +612,10 @@ MonoBehaviour:
     talkingText: Yeah
   Choices:
   - ChoiceText: Love
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Yes
+    DialogueBranch: []
     Tag: Sun
   - ChoiceText: Hate
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: No
+    DialogueBranch: []
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}

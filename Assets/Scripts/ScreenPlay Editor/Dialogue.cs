@@ -47,6 +47,13 @@ public class Dialogue : MonoBehaviour
         m = 0;
     }
 
+    void NextScene()
+    {
+        // Add Script to go to the next level
+        string NextLevel = GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel();
+        SceneManager.LoadScene(NextLevel);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -58,9 +65,7 @@ public class Dialogue : MonoBehaviour
             }
             else if (m == DialogueLines.Count && Choices.Count == 0)
             {
-                // Add Script to go to the next level
-                string NextLevel = GameObject.Find("Branches").GetComponent<StoryTags>().GetNextLevel();
-                SceneManager.LoadScene(NextLevel);
+                NextScene();
             }
         }
 
@@ -74,7 +79,14 @@ public class Dialogue : MonoBehaviour
 
                 Choices.Clear();
                 m = 0;
-                Skip();
+                if (DialogueLines.Count != 0)
+                {
+                    Skip();
+                }
+                else 
+                {
+                    NextScene();
+                }
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -84,7 +96,14 @@ public class Dialogue : MonoBehaviour
 
                 Choices.Clear();
                 m = 0;
-                Skip();
+                if (DialogueLines.Count != 0)
+                {
+                    Skip();
+                }
+                else
+                {
+                    NextScene();
+                }
             }
         }
     }
