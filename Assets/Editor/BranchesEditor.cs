@@ -69,12 +69,11 @@ public class BranchesEditor : EditorWindow
                     string iSceneName = EditorGUILayout.TextField(EditorBranches[i].SceneName);
                     Branch IBran = EditorBranches[i];
                     IBran.SceneName = iSceneName;
+                    EditorBranches[i] = IBran;
 
-                    DeleteBranch(i);
+                   
 
                 EditorGUILayout.EndHorizontal();
-
-                EditorBranches[i] = IBran;
 
                 if (EditorBranches[i].Tags != null)
                 {
@@ -90,8 +89,10 @@ public class BranchesEditor : EditorWindow
                 }
                 AddTag(i);
 
+            DeleteBranch(i);
             EditorGUILayout.EndVertical();
         }
+       
         AddBranch();
         EditorGUILayout.EndHorizontal();
 
@@ -104,9 +105,10 @@ public class BranchesEditor : EditorWindow
     {
         if (GUILayout.Button("Build"))
         {
-            for (int i = 0; i < SceneBranches.Count; i++)
+            SceneBranches.Clear();
+            for (int i = 0; i < EditorBranches.Count; i++)
             {
-                SceneBranches[i] = EditorBranches[i];
+                SceneBranches.Add(EditorBranches[i]);
             }
             EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
@@ -121,9 +123,9 @@ public class BranchesEditor : EditorWindow
             iBranch.Tags = new List<string>();
             //iBranch.Tags.Add("");
 
-            SceneBranches.Add(iBranch);
+            EditorBranches.Add(iBranch);
             //SceneBranches[SceneBranches.Count-1].Tags.Add("");
-            ResetMembers();
+            // ResetMembers();
             //EditorBranches.Add(new Branch());
             //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
@@ -133,8 +135,8 @@ public class BranchesEditor : EditorWindow
     {
         if (GUILayout.Button("Delete Branch"))
         {
-            SceneBranches.Remove(SceneBranches[branchID]);
-            ResetMembers();
+            EditorBranches.Remove(EditorBranches[branchID]);
+            //ResetMembers();
         }
     }
 
@@ -142,15 +144,15 @@ public class BranchesEditor : EditorWindow
     {
         if (GUILayout.Button("Delete Tag"))
         {
-            if (SceneBranches[sceneID].Tags == null)
+            if (EditorBranches[sceneID].Tags == null)
             {
                
             }
             else
             {
-                SceneBranches[sceneID].Tags.Remove(SceneBranches[sceneID].Tags[tagID]);
+                EditorBranches[sceneID].Tags.Remove(EditorBranches[sceneID].Tags[tagID]);
             }
-            ResetMembers();
+            // ResetMembers();
         }
     }
 
@@ -158,16 +160,16 @@ public class BranchesEditor : EditorWindow
     {
         if (GUILayout.Button("Add Tag"))
         {
-           if (SceneBranches[sceneID].Tags == null)
+           if (EditorBranches[sceneID].Tags == null)
             {
                 Debug.Log("was null");
-                Branch ibranch = SceneBranches[sceneID];
+                Branch ibranch = EditorBranches[sceneID];
                 // ibranch.SceneName = SceneBranches[sceneID].SceneName;
                 ibranch.Tags = new List<string>();
 
-                SceneBranches[sceneID] = ibranch;
+                EditorBranches[sceneID] = ibranch;
 
-                SceneBranches[sceneID].Tags.Add("");
+                EditorBranches[sceneID].Tags.Add("");
             }
             else
             {
@@ -176,9 +178,9 @@ public class BranchesEditor : EditorWindow
                 //ibranch.SceneName = SceneBranches[sceneID].SceneName;
                 //ibranch.Tags = new List<string>();
 
-                SceneBranches[sceneID].Tags.Add("");
+                EditorBranches[sceneID].Tags.Add("");
             }
-            ResetMembers();
+            // ResetMembers();
         }
     }
 
