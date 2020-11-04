@@ -64,29 +64,35 @@ public class BranchesEditor : EditorWindow
         {
             EditorGUILayout.BeginVertical();
 
-            //  SceneNames[i] = EditorGUILayout.TextField(SceneNames[i]);
-            string iSceneName = EditorGUILayout.TextField(EditorBranches[i].SceneName);
-            Branch IBran = EditorBranches[i];
-            IBran.SceneName = iSceneName;
+                EditorGUILayout.BeginHorizontal();
 
-            EditorBranches[i] = IBran;
+                    string iSceneName = EditorGUILayout.TextField(EditorBranches[i].SceneName);
+                    Branch IBran = EditorBranches[i];
+                    IBran.SceneName = iSceneName;
 
-            if (EditorBranches[i].Tags != null)
-            {
-                for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
+                    DeleteBranch(i);
+
+                EditorGUILayout.EndHorizontal();
+
+                EditorBranches[i] = IBran;
+
+                if (EditorBranches[i].Tags != null)
                 {
-                    EditorGUILayout.BeginHorizontal();
-                    string iTagName =  EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
+                    for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
+                    {
+                        EditorGUILayout.BeginHorizontal();
+                        string iTagName =  EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
 
-                    EditorBranches[i].Tags[j] = iTagName;
-                    DeleteTag(i, j);
-                    EditorGUILayout.EndHorizontal();
+                        EditorBranches[i].Tags[j] = iTagName;
+                        DeleteTag(i, j);
+                        EditorGUILayout.EndHorizontal();
+                    }
                 }
-            }
-            AddTag(i);
+                AddTag(i);
+
             EditorGUILayout.EndVertical();
         }
-        AddScene();
+        AddBranch();
         EditorGUILayout.EndHorizontal();
 
         DrawBuild();
@@ -106,9 +112,9 @@ public class BranchesEditor : EditorWindow
         }
     }
 
-    void AddScene()
+    void AddBranch()
     {
-        if (GUILayout.Button("Add Scene"))
+        if (GUILayout.Button("Add Branch"))
         {
             Branch iBranch = new Branch();
             iBranch.SceneName = "";
@@ -120,6 +126,15 @@ public class BranchesEditor : EditorWindow
             ResetMembers();
             //EditorBranches.Add(new Branch());
             //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+        }
+    }
+
+    void DeleteBranch(int branchID)
+    {
+        if (GUILayout.Button("Delete Branch"))
+        {
+            SceneBranches.Remove(SceneBranches[branchID]);
+            ResetMembers();
         }
     }
 

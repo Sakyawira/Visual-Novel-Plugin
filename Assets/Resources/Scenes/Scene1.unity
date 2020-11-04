@@ -353,12 +353,10 @@ MonoBehaviour:
   Branches:
   - Tags:
     - Moon
-    SceneName: Scene3
-  - Tags:
     - Sun
-    - Moon
     SceneName: Scene2
-  - Tags: []
+  - Tags:
+    - Moon
     SceneName: Scene3
 --- !u!4 &486540776
 Transform:
