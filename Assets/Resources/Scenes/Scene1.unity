@@ -354,13 +354,11 @@ MonoBehaviour:
   - Tags:
     - Sun
     - Moon
-    SceneName: Scene3
-  - Tags:
-    - Sun
     SceneName: Scene2
   - Tags:
-    - 
-    - 
+    - Sun
+    SceneName: Scene3
+  - Tags: []
     SceneName: Scene3
 --- !u!4 &486540776
 Transform:
@@ -614,6 +612,9 @@ MonoBehaviour:
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
+  - CharacterName: Joseph
+    CharacterEmotion: 0
+    talkingText: What do you want??
   Choices:
   - ChoiceText: Ice cream
     DialogueBranch:
@@ -626,7 +627,7 @@ MonoBehaviour:
     - CharacterName: Selena
       CharacterEmotion: 0
       talkingText: ...
-    Tag: Sun
+    Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
   choiceBox: {fileID: 1103474707}

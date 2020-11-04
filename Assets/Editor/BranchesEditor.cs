@@ -75,10 +75,12 @@ public class BranchesEditor : EditorWindow
             {
                 for (int j = 0; j < EditorBranches[i].Tags.Count; j++)
                 {
-
+                    EditorGUILayout.BeginHorizontal();
                     string iTagName =  EditorGUILayout.TextField(EditorBranches[i].Tags[j]);
 
                     EditorBranches[i].Tags[j] = iTagName;
+                    DeleteTag(i, j);
+                    EditorGUILayout.EndHorizontal();
                 }
             }
             AddTag(i);
@@ -118,6 +120,22 @@ public class BranchesEditor : EditorWindow
             ResetMembers();
             //EditorBranches.Add(new Branch());
             //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+        }
+    }
+
+    void DeleteTag(int sceneID, int tagID)
+    {
+        if (GUILayout.Button("Delete Tag"))
+        {
+            if (SceneBranches[sceneID].Tags == null)
+            {
+               
+            }
+            else
+            {
+                SceneBranches[sceneID].Tags.Remove(SceneBranches[sceneID].Tags[tagID]);
+            }
+            ResetMembers();
         }
     }
 

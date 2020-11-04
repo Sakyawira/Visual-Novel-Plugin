@@ -432,22 +432,10 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 4
-    talkingText: hiiii
+    talkingText: You prefer Ice Cream?
   - CharacterName: Selena
     CharacterEmotion: 0
     talkingText: Oh, Saki-kun...
-  - CharacterName: Selena
-    CharacterEmotion: 3
-    talkingText: It's nothing!
-  - CharacterName: James
-    CharacterEmotion: 4
-    talkingText: Hmm?
-  - CharacterName: James
-    CharacterEmotion: 3
-    talkingText: wiiii
-  - CharacterName: Nicole
-    CharacterEmotion: 0
-    talkingText: ?????
   Choices:
   - ChoiceText: Ice cream
     DialogueBranch:
