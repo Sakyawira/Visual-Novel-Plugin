@@ -604,27 +604,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Nicole
-    CharacterEmotion: 1
-    talkingText: hiiii
   - CharacterName: Joseph
     CharacterEmotion: 0
     talkingText: What do you want??
   - CharacterName: Selena
-    CharacterEmotion: 0
+    CharacterEmotion: 3
     talkingText: Yeah
   Choices:
   - ChoiceText: Love
     DialogueBranch:
     - CharacterName: Nicole
       CharacterEmotion: 0
-      talkingText: Love, huh?
+      talkingText: Yes
     Tag: Sun
   - ChoiceText: Hate
     DialogueBranch:
     - CharacterName: Nicole
       CharacterEmotion: 0
-      talkingText: Hate, huh?
+      talkingText: No
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}

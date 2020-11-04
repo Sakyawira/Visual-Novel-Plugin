@@ -7,13 +7,15 @@ using UnityEditor.SceneManagement;
 public class ScreenPlayEditor : EditorWindow
 {
     // Temporary Objects for Editor
-    public static List<Emotion> curentEmotion;
-    public static List<string> currentName;
-    public static List<string> currentText;
+    public static List<Line> EditorDialogueLines;
+    public static List<Choice> EditorChoices;
+    // public static List<Emotion> curentEmotion;
+    // public static List<string> currentName;
+    // public static List<string> currentText;
 
     // References to Objects in Level
     public static List<Line> SceneDialogueLines;
-    public static List<Choice> Choices;
+    public static List<Choice> SceneChoices;
 
     public static string sceneName;
 
@@ -31,25 +33,29 @@ public class ScreenPlayEditor : EditorWindow
     {
         EditorSceneManager.OpenScene("Assets/Resources/Scenes/" + sceneName + ".unity");
 
-        SceneDialogueLines = new List<Line>();
+        // SceneDialogueLines = new List<Line>();
         SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
-        Choices = GameObject.Find("Character").GetComponent<Dialogue>().Choices;
-        // Debug.Log(SceneDialogueLines[0].CharacterName);
+        SceneChoices = GameObject.Find("Character").GetComponent<Dialogue>().Choices;
+
+        EditorDialogueLines = new List<Line>();
+        EditorChoices = new List<Choice>();
 
         ResetMembers();
     }
 
     void ResetMembers()
     {
-        curentEmotion = new List<Emotion>();
-        currentName = new List<string>();
-        currentText = new List<string>();
+        //curentEmotion = new List<Emotion>();
+        //currentName = new List<string>();
+        //currentText = new List<string>();
 
         for (int i = 0; i < SceneDialogueLines.Count; i++)
         {
-            curentEmotion.Add(SceneDialogueLines[i].CharacterEmotion);
-            currentName.Add(SceneDialogueLines[i].CharacterName);
-            currentText.Add(SceneDialogueLines[i].talkingText);
+            EditorDialogueLines.Add(SceneDialogueLines[i]);
+        }
+        for (int i = 0; i < SceneChoices.Count; i++)
+        {
+            EditorChoices.Add(SceneChoices[i]);
         }
     }
 
@@ -57,38 +63,54 @@ public class ScreenPlayEditor : EditorWindow
     {
         //curentEmotion.Capacity = SceneDialogueLines.Count;
 
-        DrawDialogue(SceneDialogueLines);
+        DrawDialogue(EditorDialogueLines);
 
         if (hasChoice = GUILayout.Toggle(hasChoice, "Has Choices ?"))
         {
-            if (Choices.Count == 0)
+            if (EditorChoices.Count == 0)
             {
                 Choice newChoice = new Choice();
                 newChoice.DialogueBranch = new List<Line>();
-                Choices.Add(newChoice);
-                Choices.Add(newChoice);
+                EditorChoices.Add(newChoice);
+
+                newChoice = new Choice();
+                newChoice.DialogueBranch = new List<Line>();
+                EditorChoices.Add(newChoice);
             }
             DrawChoices();
         }
         else
         {
-            if (Choices.Count != 0)
+            if (EditorChoices.Count != 0)
             {
-                Choices.Clear();
+                EditorChoices.Clear();
             }
         }
 
         if (GUILayout.Button("Build"))
         {
-            for (int i = 0; i < SceneDialogueLines.Count; i++)
+            SceneDialogueLines.Clear();
+            for (int i = 0; i < EditorDialogueLines.Count; i++)
             {
                 //Line iLine = SceneDialogueLines[i];
                 //iLine.CharacterName = currentName[i];
                 //iLine.CharacterEmotion = curentEmotion[i];
                 //iLine.talkingText = currentText[i];
-                //SceneDialogueLines[i] = iLine;
-                EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+                SceneDialogueLines.Add(EditorDialogueLines[i]);
+                
             }
+
+            SceneChoices.Clear();
+            for (int i = 0; i < EditorChoices.Count; i++)
+            {
+                //Line iLine = SceneDialogueLines[i];
+                //iLine.CharacterName = currentName[i];
+                //iLine.CharacterEmotion = curentEmotion[i];
+                //iLine.talkingText = currentText[i];
+                SceneChoices.Add(EditorChoices[i]);
+            }
+
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             //Debug.Log("Built!");
         }
     }
@@ -96,25 +118,25 @@ public class ScreenPlayEditor : EditorWindow
     void DrawChoices()
     {
         
-        if (Choices.Count != 0)
+        if (EditorChoices.Count != 0)
         {
-            for (int i = 0; i < Choices.Count; i++)
+            for (int i = 0; i < EditorChoices.Count; i++)
             {
-                Choice iChoice = Choices[i];
+                Choice iChoice = EditorChoices[i];
 
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Label("Choice Text", GUILayout.MaxWidth(78));
-                iChoice.ChoiceText = EditorGUILayout.TextField(Choices[i].ChoiceText);
+                iChoice.ChoiceText = EditorGUILayout.TextField(EditorChoices[i].ChoiceText);
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Label("Given Tag", GUILayout.MaxWidth(78));
-                iChoice.Tag = EditorGUILayout.TextField(Choices[i].Tag);
+                iChoice.Tag = EditorGUILayout.TextField(EditorChoices[i].Tag);
                 EditorGUILayout.EndHorizontal();
 
-                Choices[i] = iChoice;
+                EditorChoices[i] = iChoice;
 
-                DrawDialogue(Choices[i].DialogueBranch);
+                DrawDialogue(EditorChoices[i].DialogueBranch);
 
             }
         }
@@ -145,7 +167,7 @@ public class ScreenPlayEditor : EditorWindow
         if (GUILayout.Button("Add Line"))
         {
             Lines.Add(new Line());
-            ResetMembers();
+           // ResetMembers();
         }
     }
 }
