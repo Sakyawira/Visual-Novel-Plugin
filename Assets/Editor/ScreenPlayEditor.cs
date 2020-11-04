@@ -128,13 +128,13 @@ public class ScreenPlayEditor : EditorWindow
 
             Line iLine = Lines[i];
 
-            iLine.CharacterName = EditorGUILayout.TextField(Lines[i].CharacterName/*currentName[i]*/);
-            iLine.CharacterEmotion = (Emotion)EditorGUILayout.EnumPopup(Lines[i].CharacterEmotion);
+            iLine.CharacterName = EditorGUILayout.TextField(Lines[i].CharacterName, GUILayout.MaxWidth(65));
+            iLine.CharacterEmotion = (Emotion)EditorGUILayout.EnumPopup(Lines[i].CharacterEmotion, GUILayout.MaxWidth(65));
             iLine.talkingText = EditorGUILayout.TextField(Lines[i].talkingText);
 
             Lines[i] = iLine;
 
-            if (GUILayout.Button("Delete Line"))
+            if (GUILayout.Button("Delete Line", GUILayout.MaxWidth(130)))
             {
                 Lines.Remove(Lines[i]);
             }
