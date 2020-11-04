@@ -17,6 +17,8 @@ public class ScreenPlayEditor : EditorWindow
 
     public static string sceneName;
 
+    public static bool hasChoice = false;
+
     //[MenuItem("Window/ScreenPlay Editor")]
     public static void ShowWindow(string _sceneName)
     {
@@ -57,7 +59,24 @@ public class ScreenPlayEditor : EditorWindow
 
         DrawDialogue(SceneDialogueLines);
 
-        DrawChoices();
+        if (hasChoice = GUILayout.Toggle(hasChoice, "Has Choices ?"))
+        {
+            if (Choices.Count == 0)
+            {
+                Choice newChoice = new Choice();
+                newChoice.DialogueBranch = new List<Line>();
+                Choices.Add(newChoice);
+                Choices.Add(newChoice);
+            }
+            DrawChoices();
+        }
+        else
+        {
+            if (Choices.Count != 0)
+            {
+                Choices.Clear();
+            }
+        }
 
         if (GUILayout.Button("Build"))
         {
@@ -73,33 +92,7 @@ public class ScreenPlayEditor : EditorWindow
             //Debug.Log("Built!");
         }
     }
-    //void AddTag(int sceneID)
-    //{
-    //    if (GUILayout.Button("Add Tag"))
-    //    {
-    //        if (SceneBranches[sceneID].Tags == null)
-    //        {
-    //            Debug.Log("was null");
-    //            Branch ibranch = new Branch();
-    //            ibranch.SceneName = SceneBranches[sceneID].SceneName;
-    //            ibranch.Tags = new List<string>();
 
-    //            SceneBranches[sceneID] = ibranch;
-
-    //            SceneBranches[sceneID].Tags.Add("");
-    //        }
-    //        else
-    //        {
-    //            //Debug.Log("was not null");
-    //            //Branch ibranch = new Branch();
-    //            //ibranch.SceneName = SceneBranches[sceneID].SceneName;
-    //            //ibranch.Tags = new List<string>();
-
-    //            SceneBranches[sceneID].Tags.Add("");
-    //        }
-    //        ResetMembers();
-    //    }
-    //}
     void DrawChoices()
     {
         
