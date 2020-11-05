@@ -9,6 +9,8 @@ public class ScreenPlayEditor : EditorWindow
     // Temporary Objects for Editor
     public static List<Line> EditorDialogueLines;
     public static List<Choice> EditorChoices;
+    public static CharacterDatabase EditorDB;
+
     // public static List<Emotion> curentEmotion;
     // public static List<string> currentName;
     // public static List<string> currentText;
@@ -16,6 +18,7 @@ public class ScreenPlayEditor : EditorWindow
     // References to Objects in Level
     public static List<Line> SceneDialogueLines;
     public static List<Choice> SceneChoices;
+    public static CharacterDatabase SceneDB;
 
     public static string sceneName;
 
@@ -36,6 +39,7 @@ public class ScreenPlayEditor : EditorWindow
         // SceneDialogueLines = new List<Line>();
         SceneDialogueLines = GameObject.Find("Character").GetComponent<Dialogue>().DialogueLines;
         SceneChoices = GameObject.Find("Character").GetComponent<Dialogue>().Choices;
+        SceneDB = GameObject.Find("Character").GetComponent<Dialogue>().CharacterDB;
 
         EditorDialogueLines = new List<Line>();
         EditorChoices = new List<Choice>();
@@ -45,6 +49,8 @@ public class ScreenPlayEditor : EditorWindow
 
     void ResetMembers()
     {
+        EditorDB = SceneDB;
+
         if (SceneChoices.Count == 0)
         {
             hasChoice = false;
@@ -83,6 +89,9 @@ public class ScreenPlayEditor : EditorWindow
     {
         //curentEmotion.Capacity = SceneDialogueLines.Count;
 
+
+        EditorDB = (CharacterDatabase)EditorGUILayout.ObjectField(EditorDB, typeof(CharacterDatabase), true, GUILayout.MinWidth(150), GUILayout.Height(25));
+
         DrawDialogue(EditorDialogueLines);
 
         if (hasChoice = GUILayout.Toggle(hasChoice, "Has Choices ?"))
@@ -109,6 +118,8 @@ public class ScreenPlayEditor : EditorWindow
 
         if (GUILayout.Button("Build"))
         {
+            GameObject.Find("Character").GetComponent<Dialogue>().CharacterDB = EditorDB;
+
             SceneDialogueLines.Clear();
             for (int i = 0; i < EditorDialogueLines.Count; i++)
             {

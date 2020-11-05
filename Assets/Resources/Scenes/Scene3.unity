@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f02076ecc075c45a87723a7872d11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
+  CharacterDB: {fileID: 11400000, guid: c1f73c3e35bdbcf4dbe869e4460c8dab, type: 2}
   DialogueLines:
   - CharacterName: James
     CharacterEmotion: 0
