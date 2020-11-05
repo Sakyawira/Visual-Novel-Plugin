@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct Branch
@@ -13,6 +13,15 @@ public struct Branch
 public class StoryTags : MonoBehaviour
 {
     public List<Branch> Branches;
+
+    void OnEnable()
+    {
+        // Tags is cleared when you go to the first Scene in the Build Scenne Index
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            GameObject.Find("Player").GetComponent<PlayerTags>().Tags.Clear();
+        }
+    }
 
     // Check whether the needed ingredients for a recipe are available
     bool containsAll(List<string> _neededTags, List<string> availableTags)
