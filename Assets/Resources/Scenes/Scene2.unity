@@ -577,12 +577,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags:
-    - Moon
-    SceneName: Scene2
-  - Tags:
-    - Moon
-    - Sun
-    SceneName: Scene3
+    - Breakfast
+    SceneName: Scene1
+  - Tags: []
+    SceneName: Scene1
 --- !u!4 &1715412596
 Transform:
   m_ObjectHideFlags: 0
@@ -1009,24 +1007,33 @@ MonoBehaviour:
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
   - CharacterName: Joseph
+    CharacterEmotion: 3
+    talkingText: Yo, Saki-kun! How are you?
+  - CharacterName: James
+    CharacterEmotion: 2
+    talkingText: Yo! I'm pretty good.
+  - CharacterName: Selena
+    CharacterEmotion: 3
+    talkingText: Oh, long time no see, Saki-kun!
+  - CharacterName: James
     CharacterEmotion: 0
-    talkingText: What do you want??
+    talkingText: Mi... Mina?
+  - CharacterName: Selena
+    CharacterEmotion: 2
+    talkingText: Mina here!
+  - CharacterName: Selena
+    CharacterEmotion: 2
+    talkingText: (Belly rumbles)
   - CharacterName: Selena
     CharacterEmotion: 0
-    talkingText: exactly
-  Choices:
-  - ChoiceText: Love
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Love!
-    Tag: Sun
-  - ChoiceText: Hate
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Hate!
-    Tag: 
+    talkingText: Eh... what's that noise?
+  - CharacterName: James
+    CharacterEmotion: 2
+    talkingText: Ah, that...
+  - CharacterName: James
+    CharacterEmotion: 4
+    talkingText: I haven't had breakfast
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 28774788}
   choiceBox: {fileID: 231687527}

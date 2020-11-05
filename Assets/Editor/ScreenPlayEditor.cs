@@ -45,9 +45,14 @@ public class ScreenPlayEditor : EditorWindow
 
     void ResetMembers()
     {
-        //curentEmotion = new List<Emotion>();
-        //currentName = new List<string>();
-        //currentText = new List<string>();
+        if (SceneChoices.Count == 0)
+        {
+            hasChoice = false;
+        }
+        else
+        {
+            hasChoice = true;
+        }
 
         for (int i = 0; i < SceneDialogueLines.Count; i++)
         {

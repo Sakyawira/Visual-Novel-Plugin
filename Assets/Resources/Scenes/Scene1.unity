@@ -352,9 +352,9 @@ MonoBehaviour:
   Branches:
   - Tags:
     - Breakfast
-    SceneName: Scene2
-  - Tags: []
     SceneName: Scene3
+  - Tags: []
+    SceneName: Scene2
 --- !u!4 &486540776
 Transform:
   m_ObjectHideFlags: 0
@@ -617,14 +617,26 @@ MonoBehaviour:
     CharacterEmotion: 3
     talkingText: I'm going to go then...
   - CharacterName: Nicole
-    CharacterEmotion: 4
+    CharacterEmotion: 0
     talkingText: Wait, at least eat some break fast!
   Choices:
   - ChoiceText: Eat breakfast
-    DialogueBranch: []
+    DialogueBranch:
+    - CharacterName: James
+      CharacterEmotion: 2
+      talkingText: Okay, I will have some!
+    - CharacterName: Nicole
+      CharacterEmotion: 2
+      talkingText: Yay! I cooked this one just for you!
     Tag: Breakfast
   - ChoiceText: Leave immediately
-    DialogueBranch: []
+    DialogueBranch:
+    - CharacterName: James
+      CharacterEmotion: 3
+      talkingText: Sorry, I gotta go now...
+    - CharacterName: Nicole
+      CharacterEmotion: 4
+      talkingText: Eh, nii nii...
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}

@@ -351,25 +351,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
+  - CharacterName: James
+    CharacterEmotion: 0
+    talkingText: Ah, I'm so full...
   - CharacterName: Joseph
-    CharacterEmotion: 0
-    talkingText: What do you want??
+    CharacterEmotion: 2
+    talkingText: Yo, Saki-kun!
+  - CharacterName: James
+    CharacterEmotion: 2
+    talkingText: Oh, hi Joseph!
   - CharacterName: Selena
+    CharacterEmotion: 3
+    talkingText: Long time no see, Saki-san!
+  - CharacterName: James
     CharacterEmotion: 0
-    talkingText: exactly
-  Choices:
-  - ChoiceText: Love
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Love!
-    Tag: Sun
-  - ChoiceText: Hate
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Hate!
-    Tag: 
+    talkingText: Mi... Mina!
+  - CharacterName: Selena
+    CharacterEmotion: 2
+    talkingText: Mina here!
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1443127486}
   choiceBox: {fileID: 343159163}
@@ -568,12 +568,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags:
-    - Moon
-    SceneName: Scene2
-  - Tags:
-    - Moon
-    - Sun
-    SceneName: Scene3
+    - Breakfast
+    SceneName: Scene1
+  - Tags: []
+    SceneName: Scene1
 --- !u!4 &956670321
 Transform:
   m_ObjectHideFlags: 0
