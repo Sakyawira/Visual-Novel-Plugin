@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fd5b0eb32faba14cbee430d60b73e55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d172ebb9cee8bb4295ae26c74ef4107, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -227,8 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f88ad6811fb3446a9b02dacc734a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tags:
-  - Moon
+  Tags: []
 --- !u!4 &165923122
 Transform:
   m_ObjectHideFlags: 0
@@ -352,11 +351,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags:
-    - Moon
+    - Breakfast
     SceneName: Scene2
-  - Tags:
-    - Moon
-    - Sun
+  - Tags: []
     SceneName: Scene3
 --- !u!4 &486540776
 Transform:
@@ -604,24 +601,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Joseph
+  - CharacterName: Nicole
+    CharacterEmotion: 2
+    talkingText: Good morning, Onii-san!
+  - CharacterName: James
+    CharacterEmotion: 2
+    talkingText: Ah, good morning!
+  - CharacterName: Nicole
+    CharacterEmotion: 1
+    talkingText: Hurry up, isn't this your first day of school!
+  - CharacterName: James
     CharacterEmotion: 0
-    talkingText: What do you want??
-  - CharacterName: Selena
-    CharacterEmotion: 0
-    talkingText: exactly
+    talkingText: Ah, right!
+  - CharacterName: James
+    CharacterEmotion: 3
+    talkingText: I'm going to go then...
+  - CharacterName: Nicole
+    CharacterEmotion: 4
+    talkingText: Wait, at least eat some break fast!
   Choices:
-  - ChoiceText: Love
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Love!
-    Tag: Sun
-  - ChoiceText: Hate
-    DialogueBranch:
-    - CharacterName: Nicole
-      CharacterEmotion: 0
-      talkingText: Hate!
+  - ChoiceText: Eat breakfast
+    DialogueBranch: []
+    Tag: Breakfast
+  - ChoiceText: Leave immediately
+    DialogueBranch: []
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
