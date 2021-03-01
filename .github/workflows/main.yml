@@ -18,24 +18,33 @@ jobs:
           - WebGL # WebGL.
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
     steps:
-      - uses: actions/checkout@v2
+      # Checkout Repo
+      - name: Checkout Repo
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
           lfs: true
-      - uses: actions/cache@v2
+      # Cache
+      - name: Load / Save Cache
+        uses: actions/cache@v2
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
           restore-keys: Library-
-      - uses: game-ci/unity-builder@v2
+      # Build
+      - name: Build Game
+        uses: game-ci/unity-builder@v2
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-      - uses: actions/upload-artifact@v2
+      # Upload Artifact
+      - name: Upload Game as an Artifact
+        uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
-
-      - uses: josephbmanley/butler-publish-itchio-action@master
+      # Deploy (Windows)
+      - name: Deploy Game to Itch (Windows)
+        uses: josephbmanley/butler-publish-itchio-action@master
         if: ${{ matrix.targetPlatform == 'StandaloneWindows64'}}
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
@@ -43,8 +52,9 @@ jobs:
           ITCH_GAME: visual-novel-continuous-integration-test
           ITCH_USER: sakyawira
           PACKAGE: build/${{ matrix.targetPlatform }}
-
-      - uses: josephbmanley/butler-publish-itchio-action@master
+      # Deploy (WebGL)
+      - name: Deploy Game to Itch (WebGL)
+        uses: josephbmanley/butler-publish-itchio-action@master
         if: ${{ matrix.targetPlatform == 'WebGL'}} 
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
