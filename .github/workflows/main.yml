@@ -37,11 +37,11 @@ jobs:
       - name: HTML or Windows
         id: HTML_or_Windows
         run: |
-          if [${{ matrix.targetPlatform }} == 'StandaloneWindows64']
+          if ${{ matrix.targetPlatform }} == 'StandaloneWindows64'
           then
               echo "::set-output name=channel::windows"
           else
-              echo "::set-output name=channel::HTML5 / Playable in browser"
+              echo "::set-output name=channel::HTML"
           fi
       - uses: josephbmanley/butler-publish-itchio-action@master
         env:
