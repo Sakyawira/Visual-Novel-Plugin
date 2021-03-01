@@ -15,8 +15,8 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
           - WebGL # WebGL.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
     steps:
       - uses: actions/checkout@v2
         with:
@@ -34,10 +34,19 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
+      - name: HTML or Windows
+        id: HTML_or_Windows
+        run: |
+          if [${{ matrix.targetPlatform }} == 'StandaloneWindows64']
+          then
+              echo "::set-output name=channel::windows"
+          else
+              echo "::set-output name=channel::HTML5 / Playable in browser"
+          fi
       - uses: josephbmanley/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: windows
+          CHANNEL: ${{ steps.HTML_or_Windows.outputs.channel }}
           ITCH_GAME: visual-novel-continuous-integration-test
           ITCH_USER: sakyawira
           PACKAGE: build/${{ matrix.targetPlatform }}
