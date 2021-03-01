@@ -34,19 +34,21 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
-      - name: HTML or Windows
-        id: HTML_or_Windows
-        run: |
-          if (${{ matrix.targetPlatform }} == StandaloneWindows64)
-          then
-              echo "::set-output name=channel::windows"
-          else
-              echo "::set-output name=channel::HTML"
-          fi
+
       - uses: josephbmanley/butler-publish-itchio-action@master
+        if: ${{ matrix.targetPlatform }} == StandaloneWindows64
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: ${{ steps.HTML_or_Windows.outputs.channel }}
+          CHANNEL: windows
+          ITCH_GAME: visual-novel-continuous-integration-test
+          ITCH_USER: sakyawira
+          PACKAGE: build/${{ matrix.targetPlatform }}
+
+      - uses: josephbmanley/butler-publish-itchio-action@master
+        if: ${{ matrix.targetPlatform }} == WebGL
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: HTML
           ITCH_GAME: visual-novel-continuous-integration-test
           ITCH_USER: sakyawira
           PACKAGE: build/${{ matrix.targetPlatform }}
