@@ -280,7 +280,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 170}
+  m_SizeDelta: {x: 1280, y: 170}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &399967498
 MonoBehaviour:
@@ -489,7 +489,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 380, y: 418}
+  m_SizeDelta: {x: 570, y: 627}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!82 &607656014
 AudioSource:
@@ -733,12 +733,13 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &762079657
 Canvas:
   m_ObjectHideFlags: 0
