@@ -108,6 +108,36 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public void Continue()
+    {
+        if (m < DialogueLines.Count && isTextTime)
+        {
+            Skip();
+        }
+        else if (m == DialogueLines.Count && Choices.Count == 0)
+        {
+            NextScene();
+        }
+    }
+
+    public void MakeChoice(int _choiceNumber)
+    {
+        DialogueLines = Choices[_choiceNumber].DialogueBranch;
+
+        GameObject.Find("Player").GetComponent<PlayerTags>().AddTag(Choices[_choiceNumber].Tag);
+
+        Choices.Clear();
+        m = 0;
+        if (DialogueLines.Count != 0)
+        {
+            Skip();
+        }
+        else
+        {
+            NextScene();
+        }
+    }
+
     void Skip()
     {
         PlayText();
