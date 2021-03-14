@@ -1,5 +1,7 @@
 # Visual Novel Creation Tool
  
+<img src="https://github.com/Sakyawira/Visual-Novel-Plugin/blob/feature/documentation/ImagesForDocumentation/unnasmed.png?raw=true" />
+
 This plugin’s purpose is to help developers create a Visual Novel using the Unity Engine. The plugin consists of three editor windows, a database/scriptable object, and a template scene.
 
 ## Editor Windows
