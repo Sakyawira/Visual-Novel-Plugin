@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/***********************
+  File Name   :   Character.cs
+  Description :   define a Character struct and Emotion enum. This allow a Sprite to be assigned to each of the emotion.
+  Author/s    :   Sakyawira Nanda Ruslim
+  Mail        :   Sakyawira@gmail.com
+********************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,25 +18,10 @@ public enum Emotion
     Sad
 }
 
-//[System.Serializable]
-//public struct EmotionSprites
-//{
-//    public Emotion emotion;
-//    public Sprite sprite;
-//}
-
-//[System.Serializable]
-//public class DictionaryOfStringAndInt : SerializableDictionary<string, int> { }
-
 [System.Serializable]
 public struct Character
 {
-    // public EmotionSprites[] Emotions;
-    // int ayam;
-    //public DictionaryOfStringAndInt EmotionSprites;
-   
     public string Name;
-
     public Sprite Neutral;
     public Sprite Angry;
     public Sprite Happy;

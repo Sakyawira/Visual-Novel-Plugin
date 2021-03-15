@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/***********************
+  File Name   :   BranchesEditor.cs
+  Description :   define a new editor window where user can edit the different branches a scene can go to, and the conditions to go to that branch
+  Author/s    :   Sakyawira Nanda Ruslim
+  Mail        :   Sakyawira@gmail.com
+********************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -20,25 +26,16 @@ public class BranchesEditor : EditorWindow
 
         for (int i = 0; i < SceneBranches.Count; i++)
         {
-            Branch iBranch = new Branch()/*SceneBranches[i]*/;
+            Branch iBranch = new Branch();
             iBranch.Tags = new List<string>();
 
             for (int j = 0; j < SceneBranches[i].Tags.Count; j++)
             {
                 iBranch.Tags.Add(SceneBranches[i].Tags[j]);
             }
-
-            // //EditorBranches[i].SceneName = SceneBranches[i].SceneName;
             iBranch.SceneName = SceneBranches[i].SceneName;
-            //iBranch.Tags = SceneBranches[i].Tags;
-           
             EditorBranches.Add(iBranch);
-
             SceneNames.Add(SceneBranches[i].SceneName);
-            //EditorBranches[i].SceneName = SceneBranches[i].SceneName;
-            //EditorBranches[i].Tags = new List<string>();
-
-
         }
     }
 
@@ -121,13 +118,7 @@ public class BranchesEditor : EditorWindow
             Branch iBranch = new Branch();
             iBranch.SceneName = "";
             iBranch.Tags = new List<string>();
-            //iBranch.Tags.Add("");
-
             EditorBranches.Add(iBranch);
-            //SceneBranches[SceneBranches.Count-1].Tags.Add("");
-            // ResetMembers();
-            //EditorBranches.Add(new Branch());
-            //EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
     }
 
@@ -136,7 +127,6 @@ public class BranchesEditor : EditorWindow
         if (GUILayout.Button("Delete Branch"))
         {
             EditorBranches.Remove(EditorBranches[branchID]);
-            //ResetMembers();
         }
     }
 
@@ -152,7 +142,6 @@ public class BranchesEditor : EditorWindow
             {
                 EditorBranches[sceneID].Tags.Remove(EditorBranches[sceneID].Tags[tagID]);
             }
-            // ResetMembers();
         }
     }
 
@@ -164,7 +153,6 @@ public class BranchesEditor : EditorWindow
             {
                 Debug.Log("was null");
                 Branch ibranch = EditorBranches[sceneID];
-                // ibranch.SceneName = SceneBranches[sceneID].SceneName;
                 ibranch.Tags = new List<string>();
 
                 EditorBranches[sceneID] = ibranch;
@@ -173,14 +161,8 @@ public class BranchesEditor : EditorWindow
             }
             else
             {
-                //Debug.Log("was not null");
-                //Branch ibranch = new Branch();
-                //ibranch.SceneName = SceneBranches[sceneID].SceneName;
-                //ibranch.Tags = new List<string>();
-
                 EditorBranches[sceneID].Tags.Add("");
             }
-            // ResetMembers();
         }
     }
 

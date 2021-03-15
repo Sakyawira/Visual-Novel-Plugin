@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/***********************
+  File Name   :   PlayerTags.cs
+  Description :   define a singleton tags container, which allows the game to check the choices the player has made
+  Author/s    :   Sakyawira Nanda Ruslim
+  Mail        :   Sakyawira@gmail.com
+********************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
