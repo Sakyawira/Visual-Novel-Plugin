@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/***********************
+  File Name   :   StoryTags.cs
+  Description :   define a system to create branching storyline and conditions to go to each of those branches
+  Author/s    :   Sakyawira Nanda Ruslim
+  Mail        :   Sakyawira@gmail.com
+********************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,12 +38,11 @@ public class StoryTags : MonoBehaviour
             return false;
         }
 
-        availableTags.Sort();//([](const Ingredient&LHS, const Ingredient&RHS) { return LHS > RHS; });
-        _neededTags.Sort();//([](const Ingredient&LHS, const Ingredient&RHS) { return LHS > RHS; });
+        availableTags.Sort();
+        _neededTags.Sort();
 
         for (int i = 0; i < len; i++)
         {
-            /*if (_availableIngredients.Find(_neededIngredients[i]) == INDEX_NONE )*/
             if (availableTags[i] != _neededTags[i])
             {
                 return false;
@@ -53,7 +58,6 @@ public class StoryTags : MonoBehaviour
         {
             if (containsAll(branch.Tags, _availableTags))
             {
-                //recipe.IsDiscovered = true;
                 return branch;
             }
         }

@@ -2,7 +2,7 @@
  
 <img src="https://github.com/Sakyawira/Visual-Novel-Plugin/blob/feature/documentation/ImagesForDocumentation/unnasmed.png?raw=true" />
 
-This plugin’s purpose is to help developers create a Visual Novel using the Unity Engine. The plugin consists of three editor windows, a database/scriptable object, and a template scene.
+This plugin’s purpose is to help developers create a Visual Novel using the Unity Engine. The plugin consists of three [editor windows](https://github.com/Sakyawira/Visual-Novel-Plugin#editor-windows), one [database/scriptable object](https://github.com/Sakyawira/Visual-Novel-Plugin#character-database), and one [template scene](https://github.com/Sakyawira/Visual-Novel-Plugin#template-scene). A sample Visual Created using this tool can be played [here.](https://sakyawira.itch.io/visual-novel-continuous-integration-test)
 
 ## Editor Windows
 The Main Editor Window of this plugin is the “Scene Editor” which is accessible from the “Window” menu. There is an option called “Scene Editor”.

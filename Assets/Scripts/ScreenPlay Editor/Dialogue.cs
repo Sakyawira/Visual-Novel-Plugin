@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/***********************
+  File Name   :   Dialogue.cs
+  Description :   define a system to render the text, image (based on character name and emotion), and choices of a line of a dialogue
+  Author/s    :   Sakyawira Nanda Ruslim
+  Mail        :   Sakyawira@gmail.com
+********************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -149,7 +155,6 @@ public class Dialogue : MonoBehaviour
     void PlayText()
     {
         isTextTime = false;
-        // TalkingSource.PlayOneShot(DialogueLines[m].talkingClip);
         StartCoroutine(ShowText(DialogueLines[m].talkingText));
     }
 
@@ -179,7 +184,7 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator ShowText(string Text)
     {
-        for (int i = 0; i < Text.Length; i++)
+        for (int i = 0; i <= Text.Length; i++)
         {
             TextVoice.PlayOneShot(TextBGM);
             currentText = Text.Substring(0, i);
@@ -198,13 +203,6 @@ public class Dialogue : MonoBehaviour
         {
             if (Choices.Count != 0)
             {
-                //string currentChoices = "";
-
-                //foreach (Choice choice in Choices)
-                //{
-                //    currentChoices += "          " + choice.ChoiceText;
-                //}
-
                 choiceBox.GetComponent<Text>().text = "Q. " + Choices[0].ChoiceText; //currentChoices;
                 choiceBox2.GetComponent<Text>().text = "E. " + Choices[1].ChoiceText;
             }
