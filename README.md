@@ -27,10 +27,12 @@ The Choices fields will appear if the Has Choices toggle box is ticked. The Choi
 ### Branch Editor
 The Branch Editor is used to determine which scene will the player go to based on the Tags they have. The branch Editor allows the user to add multiple branche. For each branch, there are the Next Scene text field and the Tags text field. Each branch only allows for one Next Scene text field but for multiple Tags fields. These Tags will be compared to the Player owned Tags at the end of a Scene, to check which Next Scene the Player will go to.
 Important note: The player is persistent, so the player’s Tags will persist over all the scenes. HOWEVER, the player’s Tags are cleared every time the Scene with Build Index 0 is loaded.
+
 <img src="https://github.com/Sakyawira/Visual-Novel-Plugin/blob/feature/documentation/ImagesForDocumentation/pasted%20image%200%20(3).png?raw=true" />
 
 ## Character Database
 The Character Database exists to keep track of Characters and their respective Sprites for their respective emotions. To create a database, users can simply right click in any of the Unity Asset explorer, and create a Character Database. It is important to assign this Database to each Screenplay.
+
 <img src="https://github.com/Sakyawira/Visual-Novel-Plugin/blob/feature/documentation/ImagesForDocumentation/pasted%20image%200.png?raw=true" /> <img src="https://github.com/Sakyawira/Visual-Novel-Plugin/blob/feature/documentation/ImagesForDocumentation/pasted%20image%200%20(4).png?raw=true" />
 
 ## Template Scene
