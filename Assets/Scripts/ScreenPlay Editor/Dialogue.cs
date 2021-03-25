@@ -41,6 +41,8 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        choiceBox.SetActive(false);
+        choiceBox2.SetActive(false);
         SFXSource = GetComponent<AudioSource>();
         TextVoice = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<Image>();
@@ -179,7 +181,7 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator ShowText(string Text)
     {
-        for (int i = 0; i < Text.Length; i++)
+        for (int i = 0; i <= Text.Length; i++)
         {
             TextVoice.PlayOneShot(TextBGM);
             currentText = Text.Substring(0, i);
@@ -198,19 +200,16 @@ public class Dialogue : MonoBehaviour
         {
             if (Choices.Count != 0)
             {
-                //string currentChoices = "";
-
-                //foreach (Choice choice in Choices)
-                //{
-                //    currentChoices += "          " + choice.ChoiceText;
-                //}
-
-                choiceBox.GetComponent<Text>().text = "Q. " + Choices[0].ChoiceText; //currentChoices;
+                choiceBox.SetActive(true);
+                choiceBox2.SetActive(true);
+                choiceBox.GetComponent<Text>().text = "Q. " + Choices[0].ChoiceText;
                 choiceBox2.GetComponent<Text>().text = "E. " + Choices[1].ChoiceText;
             }
         }
         else
         {
+            choiceBox.SetActive(false);
+            choiceBox2.SetActive(false);
             choiceBox.GetComponent<Text>().text = "";
             choiceBox2.GetComponent<Text>().text = "";
         }

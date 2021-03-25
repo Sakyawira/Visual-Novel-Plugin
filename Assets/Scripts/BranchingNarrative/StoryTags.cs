@@ -17,7 +17,7 @@ public class StoryTags : MonoBehaviour
     void OnEnable()
     {
         // Tags is cleared when you go to the first Scene in the Build Scenne Index
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             GameObject.Find("Player").GetComponent<PlayerTags>().Tags.Clear();
         }

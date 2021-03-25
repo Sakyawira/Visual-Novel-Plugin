@@ -208,9 +208,6 @@ GameObject:
   m_Component:
   - component: {fileID: 165923122}
   - component: {fileID: 165923121}
-  - component: {fileID: 165923123}
-  - component: {fileID: 165923124}
-  - component: {fileID: 165923125}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -245,43 +242,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &165923123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165923120}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395a3553ada4849479d4aa299ccf684e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &165923124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165923120}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb4f225e0e353c4283e733c179d46b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &165923125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165923120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b22e1fcc76ef01049a092aeefab52a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myPlacementId: rewardedVideo
 --- !u!1 &399967496
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,18 +738,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 165923124}
-        m_TargetAssemblyTypeName: InterstitialAdsScript, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &762079654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1041,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1152,10 +1100,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 165923125}
-        m_TargetAssemblyTypeName: RewardedAdsScript, Assembly-CSharp
-        m_MethodName: OnUnityAdsReady
-        m_Mode: 5
+      - m_Target: {fileID: 607656015}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: Continue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
