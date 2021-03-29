@@ -1,0 +1,6 @@
+# Gemfile
+source "https://rubygems.org"
+gem "fastlane"
+
+json_key_file("D:\Users\mds00001ns\Downloads\pc-api-7917686692748158877-337-1dc2a169132d.json")
+package_name("com.sakyawira.dreamcatcher")
