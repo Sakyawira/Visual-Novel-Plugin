@@ -1,33 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
-using UnityEngine.UI;
+using System;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine.SceneManagement;
 
-
 public class Menu : MonoBehaviour
 {
-    bool isUserAuthenticated = false;
+    //bool isUserAuthenticated = false;
     // Use this for initialization
     void Start()
     {
-        PlayGamesPlatform.Activate(); // activate playgame platform
-        PlayGamesPlatform.DebugLogEnabled = true; //enable debug log
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (!isUserAuthenticated)
+        try
         {
+            PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+            PlayGamesPlatform.InitializeInstance(config);
+            PlayGamesPlatform.DebugLogEnabled = true;
+            PlayGamesPlatform.Activate();
             Social.localUser.Authenticate((bool success) => {
                 if (success)
                 {
                     Debug.Log("You've successfully logged in");
-                    isUserAuthenticated = true; // set value to true
+                    //isUserAuthenticated = true; // set value to true
                 }
                 else
                 {
@@ -35,6 +28,21 @@ public class Menu : MonoBehaviour
                 }
             });
         }
+        catch (Exception exception)
+        {
+            Debug.Log(exception);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //if (!isUserAuthenticated)
+        //{
+        //    Social.localUser.Authenticate((bool success) => {
+           
+        //    });
+        //}
     }
 
     public void NewGame()
@@ -48,17 +56,21 @@ public class Menu : MonoBehaviour
 
     public void OpenAchievement()
     {
-        Social.localUser.Authenticate((bool success) => {
-            if (success)
-            {
-                Debug.Log("You've successfully logged in");
-                Social.ShowAchievementsUI();
-            }
-            else
-            {
-                Debug.Log("Login failed for some reason");
-            }
-        });
+        if (Social.localUser.authenticated)
+        {
+            Social.ShowAchievementsUI();
+        }
+        //Social.localUser.Authenticate((bool success) => {
+        //    if (success)
+        //    {
+        //        Debug.Log("You've successfully logged in");
+        //        Social.ShowAchievementsUI();
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Login failed for some reason");
+        //    }
+        //});
     }
 
     public void AddAchievement()
