@@ -1,7 +1,4 @@
 using UnityEngine;
-using System;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -10,28 +7,7 @@ public class Menu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        try
-        {
-            PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-            PlayGamesPlatform.InitializeInstance(config);
-            PlayGamesPlatform.DebugLogEnabled = true;
-            PlayGamesPlatform.Activate();
-            Social.localUser.Authenticate((bool success) => {
-                if (success)
-                {
-                    Debug.Log("You've successfully logged in");
-                    //isUserAuthenticated = true; // set value to true
-                }
-                else
-                {
-                    Debug.Log("Login failed for some reason");
-                }
-            });
-        }
-        catch (Exception exception)
-        {
-            Debug.Log(exception);
-        }
+  
     }
 
     // Update is called once per frame
