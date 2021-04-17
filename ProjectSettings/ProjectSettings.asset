@@ -238,7 +238,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/sakya/Downloads/Dream Catcher/user.keystore
+  AndroidKeystoreName: '{dedicated}: Downloads/user.keystore'
   AndroidKeyaliasName: com.sakyawira.dreamcatcher
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
