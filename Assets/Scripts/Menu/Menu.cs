@@ -27,7 +27,16 @@ public class Menu : MonoBehaviour
     }
     public void Continue()
     {
+        GameData data = SaveSystem.LoadData();
 
+        if (data != null)
+        {
+            SceneManager.LoadScene(data.i_CurrentLevel);
+        }
+        else
+        {
+            NewGame();
+        }
     }
 
     public void OpenAchievement()

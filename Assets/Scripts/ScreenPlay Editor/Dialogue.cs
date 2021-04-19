@@ -41,6 +41,8 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        SaveSystem.SaveData(GameObject.Find("Player").GetComponent<PlayerTags>());
         choiceBox.SetActive(false);
         choiceBox2.SetActive(false);
         SFXSource = GetComponent<AudioSource>();
