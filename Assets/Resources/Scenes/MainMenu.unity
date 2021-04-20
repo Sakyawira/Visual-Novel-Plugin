@@ -1008,7 +1008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1526704901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1072,9 +1072,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2107543576}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenAchievement
+      - m_Target: {fileID: 2107543577}
+        m_TargetAssemblyTypeName: PlayService, Assembly-CSharp
+        m_MethodName: OpenAchievements
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1285,7 +1285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1597711825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1349,9 +1349,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2107543576}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: AddAchievement
+      - m_Target: {fileID: 2107543577}
+        m_TargetAssemblyTypeName: PlayService, Assembly-CSharp
+        m_MethodName: GetAchieve
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

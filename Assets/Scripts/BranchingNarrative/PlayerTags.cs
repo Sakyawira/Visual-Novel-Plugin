@@ -39,8 +39,11 @@ public class PlayerTags : MonoBehaviour
     private void Start()
     {
         GameData data = SaveSystem.LoadData();
-        Tags.Clear();
-        Tags = data.tags;
+        if (data != null)
+        {
+            Tags.Clear();
+            Tags = data.tags;
+        }
     }
 
     public void AddTag(string newTag)
