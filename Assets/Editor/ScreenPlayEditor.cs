@@ -95,9 +95,39 @@ public class ScreenPlayEditor : EditorWindow
 
     void OnGUI()
     {
-        //curentEmotion.Capacity = SceneDialogueLines.Count;
-        scrollPos[0] = EditorGUILayout.BeginScrollView(scrollPos[0], GUILayout.Height(position.height));
-        GUILayout.Label(sceneName, EditorStyles.boldLabel);
+        EditorGUILayout.BeginHorizontal();
+        GUILayout.Label(sceneName, EditorStyles.boldLabel, GUILayout.MaxHeight(39));
+        if (GUILayout.Button("Build", GUILayout.MaxWidth(78)))
+        {
+            GameObject.Find("Character").GetComponent<Dialogue>().CharacterDB = EditorDB;
+
+            SceneDialogueLines.Clear();
+            for (int i = 0; i < EditorDialogueLines.Count; i++)
+            {
+                //Line iLine = SceneDialogueLines[i];
+                //iLine.CharacterName = currentName[i];
+                //iLine.CharacterEmotion = curentEmotion[i];
+                //iLine.talkingText = currentText[i];
+                SceneDialogueLines.Add(EditorDialogueLines[i]);
+
+            }
+
+            SceneChoices.Clear();
+            for (int i = 0; i < EditorChoices.Count; i++)
+            {
+                //Line iLine = SceneDialogueLines[i];
+                //iLine.CharacterName = currentName[i];
+                //iLine.CharacterEmotion = curentEmotion[i];
+                //iLine.talkingText = currentText[i];
+                SceneChoices.Add(EditorChoices[i]);
+            }
+
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
+            //Debug.Log("Built!");
+        }
+        EditorGUILayout.EndHorizontal();
+
+        scrollPos[0] = EditorGUILayout.BeginScrollView(scrollPos[0], GUILayout.Height(position.height -25));
 
         EditorDB = (CharacterDatabase)EditorGUILayout.ObjectField(EditorDB, typeof(CharacterDatabase), true, GUILayout.MinWidth(150), GUILayout.Height(25));
 
@@ -124,36 +154,6 @@ public class ScreenPlayEditor : EditorWindow
                 EditorChoices.Clear();
             }
         }
-
-        if (GUILayout.Button("Build"))
-        {
-            GameObject.Find("Character").GetComponent<Dialogue>().CharacterDB = EditorDB;
-
-            SceneDialogueLines.Clear();
-            for (int i = 0; i < EditorDialogueLines.Count; i++)
-            {
-                //Line iLine = SceneDialogueLines[i];
-                //iLine.CharacterName = currentName[i];
-                //iLine.CharacterEmotion = curentEmotion[i];
-                //iLine.talkingText = currentText[i];
-                SceneDialogueLines.Add(EditorDialogueLines[i]);
-                
-            }
-
-            SceneChoices.Clear();
-            for (int i = 0; i < EditorChoices.Count; i++)
-            {
-                //Line iLine = SceneDialogueLines[i];
-                //iLine.CharacterName = currentName[i];
-                //iLine.CharacterEmotion = curentEmotion[i];
-                //iLine.talkingText = currentText[i];
-                SceneChoices.Add(EditorChoices[i]);
-            }
-
-            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
-            //Debug.Log("Built!");
-        }
-
         EditorGUILayout.EndScrollView();
 
     }
