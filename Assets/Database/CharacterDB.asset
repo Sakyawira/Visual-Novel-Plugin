@@ -13,27 +13,33 @@ MonoBehaviour:
   m_Name: CharacterDB
   m_EditorClassIdentifier: 
   Characters:
-  - Name: James
+  - Name: Tako
     Neutral: {fileID: 21300000, guid: bcafd75928768c849a08fe29efc999a3, type: 3}
     Angry: {fileID: 21300000, guid: 4f31a625eac6c534db5b197506b85b16, type: 3}
     Happy: {fileID: 21300000, guid: f0a1ade3722a6924b8b6b9033e7a59f2, type: 3}
     Joy: {fileID: 21300000, guid: 6843c80137ed8b14f98a5796ec22398c, type: 3}
     Sad: {fileID: 21300000, guid: 9f5434ff8df9ac74dbb7e168e73630a6, type: 3}
-  - Name: Selena
-    Neutral: {fileID: 21300000, guid: 21e94fa47a989b44da75e88b4696fc65, type: 3}
-    Angry: {fileID: 21300000, guid: 0f27982fdd3d668498eef906112f4d3a, type: 3}
-    Happy: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
-    Joy: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
-    Sad: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
-  - Name: Nicole
-    Neutral: {fileID: 21300000, guid: 5727f2240aeac0b4bb2eae88f21dd2a1, type: 3}
-    Angry: {fileID: 21300000, guid: 05f3d09cd809b3144a60f4ca4a24a943, type: 3}
-    Happy: {fileID: 21300000, guid: d433331b9c409224f92d399a6108f30d, type: 3}
-    Joy: {fileID: 21300000, guid: f0aed739b8795d84b86097205f832353, type: 3}
-    Sad: {fileID: 21300000, guid: 92552a33379e5a742a045e9b88655b27, type: 3}
-  - Name: Joseph
+  - Name: Saki
     Neutral: {fileID: 21300000, guid: 2c93543942882024ab66adfc2afbfb7e, type: 3}
     Angry: {fileID: 21300000, guid: 27fdad18d0d92ac4293dd2662dd2fc81, type: 3}
     Happy: {fileID: 21300000, guid: e745fc7295d29054988f72ca5d1f0bc3, type: 3}
     Joy: {fileID: 21300000, guid: 3871c3845af9d154f9746eeae25c6cbc, type: 3}
     Sad: {fileID: 21300000, guid: 03047760acb978042bf411809fad2a67, type: 3}
+  - Name: Ayane
+    Neutral: {fileID: 21300000, guid: 21e94fa47a989b44da75e88b4696fc65, type: 3}
+    Angry: {fileID: 21300000, guid: 0f27982fdd3d668498eef906112f4d3a, type: 3}
+    Happy: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
+    Joy: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
+    Sad: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
+  - Name: Mina
+    Neutral: {fileID: 21300000, guid: c40c0acf186a55a4381cb35eb876d683, type: 3}
+    Angry: {fileID: 21300000, guid: f1d066b78e0263e4dae48e612230941e, type: 3}
+    Happy: {fileID: 21300000, guid: 2a0352a86b8640f4ea71e46147b58c69, type: 3}
+    Joy: {fileID: 21300000, guid: 5344ea6cb46e1144081ddb8c1f340d4b, type: 3}
+    Sad: {fileID: 21300000, guid: 269cd8b4ab4f54545b62cc49571bcb04, type: 3}
+  - Name: Hitagi
+    Neutral: {fileID: 21300000, guid: 99f582617ce8e194599745535c7a0a55, type: 3}
+    Angry: {fileID: 21300000, guid: 751ef1f0ca574484194cd64d4f198a00, type: 3}
+    Happy: {fileID: 21300000, guid: c86b6b7e2f223a74fa2309dd1a28998b, type: 3}
+    Joy: {fileID: 21300000, guid: b25d1ae95712b2f478dee9bc88e49f25, type: 3}
+    Sad: {fileID: 21300000, guid: 1499a4c0a033dab43bc683eaa45bff5b, type: 3}

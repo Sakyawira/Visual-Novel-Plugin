@@ -24,6 +24,8 @@ public class ScreenPlayEditor : EditorWindow
 
     public static bool hasChoice = false;
 
+    List<Vector2> scrollPos;
+
     //[MenuItem("Window/ScreenPlay Editor")]
     public static void ShowWindow(string _sceneName)
     {
@@ -43,6 +45,12 @@ public class ScreenPlayEditor : EditorWindow
 
         EditorDialogueLines = new List<Line>();
         EditorChoices = new List<Choice>();
+
+        scrollPos = new List<Vector2>();
+        for (int i = 0; i < 3; i++)
+        {
+            scrollPos.Add(Vector2.zero);
+        }
 
         ResetMembers();
     }
@@ -88,11 +96,12 @@ public class ScreenPlayEditor : EditorWindow
     void OnGUI()
     {
         //curentEmotion.Capacity = SceneDialogueLines.Count;
-
+        scrollPos[0] = EditorGUILayout.BeginScrollView(scrollPos[0], GUILayout.Height(position.height));
+        GUILayout.Label(sceneName, EditorStyles.boldLabel);
 
         EditorDB = (CharacterDatabase)EditorGUILayout.ObjectField(EditorDB, typeof(CharacterDatabase), true, GUILayout.MinWidth(150), GUILayout.Height(25));
 
-        DrawDialogue(EditorDialogueLines);
+        DrawDialogue(EditorDialogueLines, 0);
 
         if (hasChoice = GUILayout.Toggle(hasChoice, "Has Choices ?"))
         {
@@ -144,6 +153,9 @@ public class ScreenPlayEditor : EditorWindow
             EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
             //Debug.Log("Built!");
         }
+
+        EditorGUILayout.EndScrollView();
+
     }
 
     void DrawChoices()
@@ -167,14 +179,15 @@ public class ScreenPlayEditor : EditorWindow
 
                 EditorChoices[i] = iChoice;
 
-                DrawDialogue(EditorChoices[i].DialogueBranch);
-
+                DrawDialogue(EditorChoices[i].DialogueBranch, i + 1);
             }
         }
     }
 
-    void DrawDialogue(List<Line> Lines)
+    void DrawDialogue(List<Line> Lines, int scrollId)
     {
+        //scrollPos[scrollId] = EditorGUILayout.BeginScrollView(scrollPos[scrollId], GUILayout.Height(200));
+
         for (int i = 0; i < Lines.Count; i++)
         {
             EditorGUILayout.BeginHorizontal();
@@ -194,12 +207,15 @@ public class ScreenPlayEditor : EditorWindow
 
             EditorGUILayout.EndHorizontal();
         }
+        
+        //EditorGUILayout.EndScrollView();
 
         if (GUILayout.Button("Add Line"))
         {
             Lines.Add(new Line());
            // ResetMembers();
         }
+
     }
 }
 
