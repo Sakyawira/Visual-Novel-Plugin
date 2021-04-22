@@ -24,7 +24,11 @@
 
 public static class Achievement
 {
+        public const string achievement_senpai = "CgkIwYuFn8keEAIQAg"; // <GPGSID>
+        public const string achievement_incel = "CgkIwYuFn8keEAIQBQ"; // <GPGSID>
+        public const string achievement_wingmaned = "CgkIwYuFn8keEAIQBA"; // <GPGSID>
         public const string achievement_eat_breakfast = "CgkIwYuFn8keEAIQAQ"; // <GPGSID>
+        public const string achievement_sandwich = "CgkIwYuFn8keEAIQAw"; // <GPGSID>
 
 }
 
