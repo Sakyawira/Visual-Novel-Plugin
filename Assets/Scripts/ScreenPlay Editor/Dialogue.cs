@@ -178,6 +178,27 @@ public class Dialogue : MonoBehaviour
             case Emotion.Sad:
                 spriteRenderer.sprite = iCharacter.Sad;
                 break;
+            case Emotion.Annoyed:
+                spriteRenderer.sprite = iCharacter.Annoyed;
+                break;
+            case Emotion.Shocked:
+                spriteRenderer.sprite = iCharacter.Shocked;
+                break;
+            case Emotion.Sleepy:
+                spriteRenderer.sprite = iCharacter.Sleepy;
+                break;
+            case Emotion.Sweat:
+                spriteRenderer.sprite = iCharacter.Sweat;
+                break;
+            case Emotion.Smug:
+                spriteRenderer.sprite = iCharacter.Smug;
+                break;
+            case Emotion.Laugh:
+                spriteRenderer.sprite = iCharacter.Laugh;
+                break;
+            case Emotion.Sweet:
+                spriteRenderer.sprite = iCharacter.Sweet;
+                break;
         }
     }
 

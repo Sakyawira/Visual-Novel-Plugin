@@ -14,32 +14,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Characters:
   - Name: Tako
-    Neutral: {fileID: 21300000, guid: bcafd75928768c849a08fe29efc999a3, type: 3}
-    Angry: {fileID: 21300000, guid: 4f31a625eac6c534db5b197506b85b16, type: 3}
-    Happy: {fileID: 21300000, guid: f0a1ade3722a6924b8b6b9033e7a59f2, type: 3}
-    Joy: {fileID: 21300000, guid: 6843c80137ed8b14f98a5796ec22398c, type: 3}
-    Sad: {fileID: 21300000, guid: 9f5434ff8df9ac74dbb7e168e73630a6, type: 3}
+    Neutral: {fileID: 21300000, guid: a4eeb76d82ee62f4dad2dc775b7c0047, type: 3}
+    Angry: {fileID: 21300000, guid: 591235d85dd9e7d4aa953f6261e2bd1d, type: 3}
+    Happy: {fileID: 21300000, guid: b4323f674061e74489180b961fa91d5e, type: 3}
+    Joy: {fileID: 21300000, guid: d2f96f012cabfd24da30391409e38ef8, type: 3}
+    Sad: {fileID: 21300000, guid: 00f2e4c527be63642aa17e44f7ebbc69, type: 3}
+    Annoyed: {fileID: 21300000, guid: ffd5e75ec194c2641b001a39fc117294, type: 3}
+    Shocked: {fileID: 21300000, guid: a34ad21ac96aebf418745356768fd894, type: 3}
+    Sleepy: {fileID: 21300000, guid: 44f992f5d7bc64d47bf9d174fca7dbc1, type: 3}
+    Sweat: {fileID: 21300000, guid: 8306e69ec1d47874b9f4cb939d67256a, type: 3}
+    Smug: {fileID: 21300000, guid: c32f64487bb20264b945ae68059bda79, type: 3}
+    Laugh: {fileID: 21300000, guid: e2b20b20258463148a78b2ac6194b76f, type: 3}
+    Sweet: {fileID: 21300000, guid: 5edfa078e3d861e4aa236f9587ae9ec0, type: 3}
   - Name: Saki
-    Neutral: {fileID: 21300000, guid: 2c93543942882024ab66adfc2afbfb7e, type: 3}
-    Angry: {fileID: 21300000, guid: 27fdad18d0d92ac4293dd2662dd2fc81, type: 3}
-    Happy: {fileID: 21300000, guid: e745fc7295d29054988f72ca5d1f0bc3, type: 3}
-    Joy: {fileID: 21300000, guid: 3871c3845af9d154f9746eeae25c6cbc, type: 3}
-    Sad: {fileID: 21300000, guid: 03047760acb978042bf411809fad2a67, type: 3}
-  - Name: Ayane
-    Neutral: {fileID: 21300000, guid: 21e94fa47a989b44da75e88b4696fc65, type: 3}
-    Angry: {fileID: 21300000, guid: 0f27982fdd3d668498eef906112f4d3a, type: 3}
-    Happy: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
-    Joy: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
-    Sad: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
+    Neutral: {fileID: 21300000, guid: 25ebabac8d121cf488a8de5620886c65, type: 3}
+    Angry: {fileID: 21300000, guid: f35d4c6d84ff6f84fac67cb09f157c0d, type: 3}
+    Happy: {fileID: 21300000, guid: 93e24c048e882ba45a8b18ce40390d5c, type: 3}
+    Joy: {fileID: 21300000, guid: c766ff4b6629a564288591138f2b6235, type: 3}
+    Sad: {fileID: 21300000, guid: 3bccb5d81c1d2634e8b62a309c17731a, type: 3}
+    Annoyed: {fileID: 21300000, guid: f935151b241b6624daf203638dfacd16, type: 3}
+    Shocked: {fileID: 21300000, guid: ebba36083b3a94f41aa3822958dc85e3, type: 3}
+    Sleepy: {fileID: 21300000, guid: 55a3d16779dabf94887a7c1a5175a879, type: 3}
+    Sweat: {fileID: 21300000, guid: 796e84fd776fe704fbd2c8f0b1f7511c, type: 3}
+    Smug: {fileID: 21300000, guid: 69ac9062768a17644abdb8380ab88a3c, type: 3}
+    Laugh: {fileID: 21300000, guid: 2d06c13096a11bf4aaabc2fd0b79ff1e, type: 3}
+    Sweet: {fileID: 21300000, guid: 98076fa0cfd6be444b379b326bef3e73, type: 3}
   - Name: Mina
     Neutral: {fileID: 21300000, guid: c40c0acf186a55a4381cb35eb876d683, type: 3}
     Angry: {fileID: 21300000, guid: f1d066b78e0263e4dae48e612230941e, type: 3}
     Happy: {fileID: 21300000, guid: 2a0352a86b8640f4ea71e46147b58c69, type: 3}
     Joy: {fileID: 21300000, guid: 5344ea6cb46e1144081ddb8c1f340d4b, type: 3}
     Sad: {fileID: 21300000, guid: 269cd8b4ab4f54545b62cc49571bcb04, type: 3}
+    Annoyed: {fileID: 21300000, guid: f1d066b78e0263e4dae48e612230941e, type: 3}
+    Shocked: {fileID: 21300000, guid: 153e37f4a2f77af42a7a6b96a5ae3030, type: 3}
+    Sleepy: {fileID: 21300000, guid: 8c463127c98f30e4d8a2d28416993c3c, type: 3}
+    Sweat: {fileID: 21300000, guid: b6b5ddc1cbd80af4d8ecdf1150aea632, type: 3}
+    Smug: {fileID: 21300000, guid: 6e9dd8c925df41f4abdac904e9c29d1b, type: 3}
+    Laugh: {fileID: 21300000, guid: 2a0352a86b8640f4ea71e46147b58c69, type: 3}
+    Sweet: {fileID: 21300000, guid: a99eae22dd3cfaa4d836a98b4112ecaf, type: 3}
   - Name: Hitagi
     Neutral: {fileID: 21300000, guid: 99f582617ce8e194599745535c7a0a55, type: 3}
     Angry: {fileID: 21300000, guid: 751ef1f0ca574484194cd64d4f198a00, type: 3}
-    Happy: {fileID: 21300000, guid: c86b6b7e2f223a74fa2309dd1a28998b, type: 3}
+    Happy: {fileID: 21300000, guid: 3476917d96d620c44acfe56fc57258fb, type: 3}
     Joy: {fileID: 21300000, guid: b25d1ae95712b2f478dee9bc88e49f25, type: 3}
     Sad: {fileID: 21300000, guid: 1499a4c0a033dab43bc683eaa45bff5b, type: 3}
+    Annoyed: {fileID: 21300000, guid: 1ff06c8c090975b4b84a6d7ac5852f89, type: 3}
+    Shocked: {fileID: 21300000, guid: f5c8a1afcf5c70a45977b88b80685a28, type: 3}
+    Sleepy: {fileID: 21300000, guid: ff15897d372b56f4bacdb5f28dbfe83d, type: 3}
+    Sweat: {fileID: 21300000, guid: abae015b1b9f1af46b75db8af847c50a, type: 3}
+    Smug: {fileID: 21300000, guid: 8e152c8763af925419a8dbfa371f3070, type: 3}
+    Laugh: {fileID: 21300000, guid: c86b6b7e2f223a74fa2309dd1a28998b, type: 3}
+    Sweet: {fileID: 21300000, guid: 81e2efce11f3b0d49911247a579c20dd, type: 3}
+  - Name: Ayane
+    Neutral: {fileID: 21300000, guid: 21e94fa47a989b44da75e88b4696fc65, type: 3}
+    Angry: {fileID: 21300000, guid: 0f27982fdd3d668498eef906112f4d3a, type: 3}
+    Happy: {fileID: 21300000, guid: 9c1d4ddbc20c6524983b80a542495bf9, type: 3}
+    Joy: {fileID: 21300000, guid: 462e7a3ce5042354a9079e9824a143f7, type: 3}
+    Sad: {fileID: 21300000, guid: b03cdddb32c300f4b8fafd5afdd12e73, type: 3}
+    Annoyed: {fileID: 0}
+    Shocked: {fileID: 0}
+    Sleepy: {fileID: 0}
+    Sweat: {fileID: 0}
+    Smug: {fileID: 0}
+    Laugh: {fileID: 0}
+    Sweet: {fileID: 0}
