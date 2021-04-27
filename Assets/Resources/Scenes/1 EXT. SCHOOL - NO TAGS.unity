@@ -878,150 +878,170 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: Ah, I'm so full...
   - CharacterName: Tako
-    CharacterEmotion: 2
-    talkingText: Yo, Saki-kun!
-  - CharacterName: Saki
-    CharacterEmotion: 2
-    talkingText: Oh, hi Tako!!
-  - CharacterName: Mina
-    CharacterEmotion: 3
-    talkingText: Long time no see, Saki-san!
+    CharacterEmotion: 0
+    talkingText: 'Oh yo saki kun! '
   - CharacterName: Saki
     CharacterEmotion: 0
-    talkingText: Mi... Mina!
+    talkingText: 'Oh yo tako! '
   - CharacterName: Mina
-    CharacterEmotion: 2
+    CharacterEmotion: 0
+    talkingText: 'Ah, saki-kun. Long time no see! '
+  - CharacterName: Saki
+    CharacterEmotion: 0
+    talkingText: Mi- mina
+  - CharacterName: Mina
+    CharacterEmotion: 0
     talkingText: Mina here!
+  - CharacterName: Mina
+    CharacterEmotion: 0
+    talkingText: (tummy rumbles)
+  - CharacterName: Mina
+    CharacterEmotion: 0
+    talkingText: What's that noise?
   - CharacterName: Saki
     CharacterEmotion: 0
-    talkingText: How... how are you?
+    talkingText: I haven't eaten breakfast.
   - CharacterName: Mina
     CharacterEmotion: 0
-    talkingText: 'Hm? I''m good I guess. School''s been busy though. '
+    talkingText: You...
+  - CharacterName: Mina
+    CharacterEmotion: 0
+    talkingText: 'You should take care of yourself. '
+  - CharacterName: Mina
+    CharacterEmotion: 0
+    talkingText: Baka!
   - CharacterName: Saki
-    CharacterEmotion: 3
-    talkingText: 'I guess it has been huh... I don''t really notice it. '
-  - CharacterName: Tako
-    CharacterEmotion: 3
-    talkingText: 'That''s because you are such a big brain!  '
+    CharacterEmotion: 0
+    talkingText: 'My sister did cooked breakfast for me. But I thought I might be
+      late if I eat. '
   - CharacterName: Mina
     CharacterEmotion: 0
-    talkingText: 'You should pay attention more! Saki-kun, you are so smart so it
-      will be a waste if you don''t work hard. '
+    talkingText: You did not eat the food your sister prepared for you!!!
   - CharacterName: Saki
-    CharacterEmotion: 3
-    talkingText: Uhh yeah...
-  - CharacterName: Tako
-    CharacterEmotion: 2
-    talkingText: 'I don''t know what you are talking about, Mina. He''s so good,
-      he does not need to work hard. He got straight A, last year right? '
-  - CharacterName: SAKI
-    CharacterEmotion: 4
-    talkingText: 'Straight A- '
-  - CharacterName: Tako
-    CharacterEmotion: 2
-    talkingText: 'Still an A '
-  - CharacterName: Tako
-    CharacterEmotion: 3
-    talkingText: 'What did you get Mina? '
+    CharacterEmotion: 0
+    talkingText: 'Eh '
   - CharacterName: Mina
     CharacterEmotion: 0
-    talkingText: 'Straight A+ '
+    talkingText: 'You are not only worrying me, buy Ayane-chan as well! '
   - CharacterName: Mina
     CharacterEmotion: 0
-    talkingText: (Silence)
-  - CharacterName: Tako
-    CharacterEmotion: 3
-    talkingText: Nice!
+    talkingText: 'You could have just woke up earlier, you know that right? '
   - CharacterName: Tako
     CharacterEmotion: 0
-    talkingText: (Bell rings. )
+    talkingText: 'Oyaa... if I don''t know any better, I would have thought you guys
+      are married. '
   - CharacterName: Mina
     CharacterEmotion: 0
-    talkingText: 'Sate. I''ma have to go now. More work to do. '
-  - CharacterName: Tako
-    CharacterEmotion: 3
-    talkingText: Okay
-  - CharacterName: Mina
-    CharacterEmotion: 0
-    talkingText: bye!
+    talkingText: 'E.. e.. '
   - CharacterName: Saki
-    CharacterEmotion: 3
-    talkingText: Wai..Wait
+    CharacterEmotion: 0
+    talkingText: 'Tako-kun! '
+  - CharacterName: Tako
+    CharacterEmotion: 0
+    talkingText: 'Gomen. It just that you too really does sounds like newly-wed '
+  - CharacterName: Saki
+    CharacterEmotion: 0
+    talkingText: 'Like you know how newlywed acts -.- '
+  - CharacterName: Saki
+    CharacterEmotion: 0
+    talkingText: '(bell rings) '
+  - CharacterName: Mina
+    CharacterEmotion: 0
+    talkingText: 'In anycase, here'' a sandwich.I have plenty so you can eat this
+      one. '
   Choices:
-  - ChoiceText: Ask if she is free this Friday
+  - ChoiceText: Take Sandwich
     DialogueBranch:
     - CharacterName: Saki
-      CharacterEmotion: 3
-      talkingText: Are you free this Friday?
+      CharacterEmotion: 0
+      talkingText: 'Ah, thanks, Mina-chan! '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: '(bell is still ringing) '
     - CharacterName: Mina
       CharacterEmotion: 0
-      talkingText: This Friday?
-    - CharacterName: Mina
-      CharacterEmotion: 0
-      talkingText: Hmm... yeah. What's up?
+      talkingText: Oh no. I really gotta go now. Bye!
     - CharacterName: Saki
       CharacterEmotion: 0
-      talkingText: Ah, do you... wanna grab dinner?
-    - CharacterName: Mina
-      CharacterEmotion: 0
-      talkingText: Just the two of us?
-    - CharacterName: Saki
-      CharacterEmotion: 3
-      talkingText: Ye... yes!
-    - CharacterName: Mina
-      CharacterEmotion: 0
-      talkingText: Just dinner right?
-    - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: Yes!
-    - CharacterName: Mina
-      CharacterEmotion: 2
-      talkingText: Okay! See you then!
-    - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: See... see you!
+      talkingText: Wait.. okay... bye
     - CharacterName: Saki
       CharacterEmotion: 0
-      talkingText: (Mina left)
-    - CharacterName: Tako
-      CharacterEmotion: 3
-      talkingText: Big boy!
-    - CharacterName: Saki
-      CharacterEmotion: 0
-      talkingText: Shutup
+      talkingText: Mina left.
     - CharacterName: Tako
       CharacterEmotion: 0
-      talkingText: So you have not moved on after-all!
+      talkingText: 'Will you look at that. '
     - CharacterName: Saki
       CharacterEmotion: 0
-      talkingText: Shutup
-    Tag: Asked-Mina
-  - ChoiceText: Cheered Mina
+      talkingText: 'What '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'She still care for you '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Yeah... hopefully... '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Anyway. Class. Now '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Aight. Lego. '
+    Tag: Sandwich
+  - ChoiceText: Don't take sandwich
     DialogueBranch:
     - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: Good luck on stuff!
-    - CharacterName: MINA
-      CharacterEmotion: 2
-      talkingText: Thanks!
+      CharacterEmotion: 0
+      talkingText: Actually, no. I will buy something else later.
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: 'Later? You mean lunch? '
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: 'Fine then. Up to you. '
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: '(bell is still ringing) '
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: 'Oh. I gotta go now. Bye! '
     - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: 'Mina left. '
+      CharacterEmotion: 0
+      talkingText: 'Bye. '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: (Mina left. )
     - CharacterName: Tako
       CharacterEmotion: 0
-      talkingText: 'Dude, I tried so hard to wingman you, and that''s the only thing
-        you say at the end. '
+      talkingText: 'What is that!? '
     - CharacterName: Saki
       CharacterEmotion: 0
-      talkingText: 'It''s not like you were doing an awully goodjob '
+      talkingText: 'What? '
     - CharacterName: Tako
-      CharacterEmotion: 1
-      talkingText: 'You ungrateful lil shit '
+      CharacterEmotion: 0
+      talkingText: 'Why would you reject her offer? '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'I ... I just don''t feel like eating Sandwich. '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Dud! Do you even still like her? '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Yeah. But... I don''t really want to just takes in whatever she
+        shove at me. '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Gahd '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Oh well. Idk if she will be upset. But knowing her, she will
+        probably forget it soon. '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Class. Now '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Aight. Lego. '
     Tag: 
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 1653316337}
@@ -1268,8 +1288,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags:
-    - Breakfast
+    - Sandwich
     SceneName: MainMenu
+  - Tags: []
+    SceneName: 
 --- !u!4 &2023139965
 Transform:
   m_ObjectHideFlags: 0
