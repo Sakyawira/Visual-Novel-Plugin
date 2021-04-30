@@ -334,7 +334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags: []
-    SceneName: MainMenu
+    SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
+  - Tags:
+    - Agree-Band
+    SceneName: 3 INT. SCHOOL - AGREE-BAND
 --- !u!4 &1013099222
 Transform:
   m_ObjectHideFlags: 0
@@ -395,7 +398,7 @@ MonoBehaviour:
     talkingText: Wanna come with me to the cafetaria?
   - CharacterName: Saki
     CharacterEmotion: 0
-    talkingText: I am still kinda full though...
+    talkingText: Let's go, I am super hungry too!
   - CharacterName: Saki
     CharacterEmotion: 2
     talkingText: Door slammed open. Sounds of shoes knocking on the floor loudly

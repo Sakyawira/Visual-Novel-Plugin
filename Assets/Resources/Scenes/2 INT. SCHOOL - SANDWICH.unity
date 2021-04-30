@@ -333,8 +333,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Branches:
-  - Tags: []
-    SceneName: MainMenu
+  - Tags:
+    - Breakfast
+    - Sandwich
+    - Agree-Band
+    SceneName: 3 INT. SCHOOL - AGREE-BAND
+  - Tags:
+    - Breakfast
+    - Sandwich
+    - Asked-Mina
+    SceneName: 3 INT. CAFE - ASKED-MINA
 --- !u!4 &1013099222
 Transform:
   m_ObjectHideFlags: 0

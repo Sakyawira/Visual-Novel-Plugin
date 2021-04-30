@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6960145094fb4f4e93e8732646cc242, type: 3}
+  m_Name: Dating
+  m_EditorClassIdentifier: 
+  Characters:
+  - Name: Saki
+    Neutral: {fileID: 21300000, guid: cdd10e266fb7cf64b8e91d5a95330e08, type: 3}
+    Angry: {fileID: 21300000, guid: 38324a3811cc84d4a9bceb9d29cad4bd, type: 3}
+    Happy: {fileID: 21300000, guid: 7752baee6c41bd344b534857ba516da2, type: 3}
+    Joy: {fileID: 21300000, guid: 9505d1b246453c14982de2beba2fb7fe, type: 3}
+    Sad: {fileID: 21300000, guid: 47fd2291beb4ac747b7ed55ac130c8ec, type: 3}
+    Annoyed: {fileID: 21300000, guid: bc2f1fa2764f4034ea1cb1c60d1d974e, type: 3}
+    Shocked: {fileID: 21300000, guid: 30da7780eef2b89468e8eb5cd0f311ea, type: 3}
+    Sleepy: {fileID: 21300000, guid: 094ccea2b17b0d0438b575284e6c7921, type: 3}
+    Sweat: {fileID: 21300000, guid: d69259508691c6f44850e0556f655c86, type: 3}
+    Smug: {fileID: 21300000, guid: 1fb2130e1bf697142842a8294e418462, type: 3}
+    Laugh: {fileID: 21300000, guid: 407e1048ed26ad24bb01218bb816df0b, type: 3}
+    Sweet: {fileID: 21300000, guid: 7ace1657e9569e54eb4cb337a83c7117, type: 3}
+  - Name: Mina
+    Neutral: {fileID: 21300000, guid: bb091e554b2960047a9694c638d61b7b, type: 3}
+    Angry: {fileID: 21300000, guid: 0436eae61e2f807468a20896e0ada3bc, type: 3}
+    Happy: {fileID: 21300000, guid: eaed57c6837179f40a4ec0e9251af72d, type: 3}
+    Joy: {fileID: 21300000, guid: 4818acd5082e28b4ca9fd6db37ea5df8, type: 3}
+    Sad: {fileID: 21300000, guid: ccf0352b55b81e74d8e44890e3c8f22d, type: 3}
+    Annoyed: {fileID: 21300000, guid: 457c4972956e3cb47b44ef56046dd0d5, type: 3}
+    Shocked: {fileID: 21300000, guid: abaf7517e99a9cc4985937af83e55036, type: 3}
+    Sleepy: {fileID: 21300000, guid: d405c63926a5d7c48b7016f13e3d891c, type: 3}
+    Sweat: {fileID: 21300000, guid: da40cb8b456cf0d4fa162bc75deb75d0, type: 3}
+    Smug: {fileID: 21300000, guid: 9155acea26470194084542ef6be1db44, type: 3}
+    Laugh: {fileID: 21300000, guid: 39150f9cf28cbf344a4d1baad290721b, type: 3}
+    Sweet: {fileID: 21300000, guid: eb8542ed2c7009943b1628633c082a44, type: 3}
