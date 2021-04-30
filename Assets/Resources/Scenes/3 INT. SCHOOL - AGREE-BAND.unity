@@ -356,12 +356,14 @@ MonoBehaviour:
     - Agree-Band
     SceneName: 3 INT. CAFE - ASKED-MINA
   - Tags:
-    - Breakfast
     - Sandwich
     - Agree-Band
     SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
   - Tags:
     - Breakfast
+    - Agree-Band
+    SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
+  - Tags:
     - Agree-Band
     SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
 --- !u!4 &486540776

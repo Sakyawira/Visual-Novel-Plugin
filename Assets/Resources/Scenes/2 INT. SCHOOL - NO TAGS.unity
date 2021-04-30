@@ -534,42 +534,36 @@ MonoBehaviour:
     - CharacterName: Saki
       CharacterEmotion: 0
       talkingText: 'Fine. I will do it... '
-    - CharacterName: Mina
-      CharacterEmotion: 0
+    - CharacterName: Hitagi
+      CharacterEmotion: 3
       talkingText: 'Yay! See you at the auditorium on Thursday 7:00 pm! We will have
         practice!  '
-    - CharacterName: Mina
-      CharacterEmotion: 0
+    - CharacterName: Saki
+      CharacterEmotion: 2
       talkingText: Okay
-    - CharacterName: Mina
+    - CharacterName: Hitagi
       CharacterEmotion: 0
       talkingText: 'Hitagi left. '
-    - CharacterName: Mina
-      CharacterEmotion: 0
+    - CharacterName: Tako
+      CharacterEmotion: 2
       talkingText: 'O, you might be on your way to winning a jackpot! '
     - CharacterName: Saki
       CharacterEmotion: 0
       talkingText: 'I don''t know how to feel about what you just said -.- '
     - CharacterName: Saki
-      CharacterEmotion: 0
+      CharacterEmotion: 11
       talkingText: 'She is like an older sister to me '
     - CharacterName: Tako
-      CharacterEmotion: 0
+      CharacterEmotion: 6
       talkingText: 'That''s even hotter!  '
-    - CharacterName: Tako
-      CharacterEmotion: 0
-      talkingText: 'Why would you reject her offer? '
     - CharacterName: Saki
       CharacterEmotion: 0
       talkingText: What??!
-    - CharacterName: Tako
-      CharacterEmotion: 0
-      talkingText: 'Dud! Do you even still like her? '
     - CharacterName: Saki
       CharacterEmotion: 0
       talkingText: 'Tako, you degenerate '
     - CharacterName: Tako
-      CharacterEmotion: 0
+      CharacterEmotion: 10
       talkingText: 'AHAHAHHAHAHAHAHHAHHAHHAHAH '
     Tag: Agree-Band
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}

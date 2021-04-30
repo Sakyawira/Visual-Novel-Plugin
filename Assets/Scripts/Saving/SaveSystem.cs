@@ -46,6 +46,20 @@ public static class SaveSystem
         // Debug.LogError(path);
         stream.Close();
     }
+    public static void ResetData()
+    {
+        GameData data = new GameData(new PlayerTags());
+
+        data.i_UnlockedLevels = 1;
+
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/player.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        formatter.Serialize(stream, data);
+        // Debug.LogError(path);
+        stream.Close();
+    }
 
     public static void UnlockAllLevels(PlayerTags playerTags)
     {

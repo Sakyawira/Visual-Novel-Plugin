@@ -17,4 +17,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/2 INT. SCHOOL - BREAKFAST.unity
     guid: f2b0b7c6c47ee6642a19dc7c94177c0a
+  - enabled: 1
+    path: Assets/Resources/Scenes/1 EXT. SCHOOL - NO TAGS.unity
+    guid: db2b864e1ba802241b7bd867524694ca
+  - enabled: 1
+    path: Assets/Resources/Scenes/2 INT. SCHOOL - BREAKFAST, ASKED-MINA.unity
+    guid: 7214105c3f85c674ab0cb4b9cecc8859
+  - enabled: 1
+    path: Assets/Resources/Scenes/2 INT. SCHOOL - NO TAGS.unity
+    guid: 7339efdcd452df749a6cb426f1786a20
+  - enabled: 1
+    path: Assets/Resources/Scenes/2 INT. SCHOOL - SANDWICH.unity
+    guid: fc4fadc838201ea46bbf1257febb6e90
+  - enabled: 1
+    path: Assets/Resources/Scenes/3 INT. CAFE - ASKED-MINA.unity
+    guid: d98796f5571474e42af98a47212bcb59
+  - enabled: 1
+    path: Assets/Resources/Scenes/3 INT. HOUSE - NO TAGS-BREAKFAST.unity
+    guid: 7566a1dfb7f5a294fb6681a2bbdef145
+  - enabled: 1
+    path: Assets/Resources/Scenes/3 INT. SCHOOL - AGREE-BAND.unity
+    guid: 3cfc87c6340319b47bf6f154e4640df2
   m_configObjects: {}

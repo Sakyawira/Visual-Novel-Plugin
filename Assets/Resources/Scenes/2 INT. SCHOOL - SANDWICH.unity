@@ -334,12 +334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Branches:
   - Tags:
-    - Breakfast
     - Sandwich
     - Agree-Band
     SceneName: 3 INT. SCHOOL - AGREE-BAND
   - Tags:
-    - Breakfast
     - Sandwich
     - Asked-Mina
     SceneName: 3 INT. CAFE - ASKED-MINA
@@ -412,25 +410,16 @@ MonoBehaviour:
     CharacterEmotion: 2
     talkingText: 'SAKIIIIII-KUN!!!!! '
   - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: 'HEEEEEE '
-  - CharacterName: Hitagi
-    CharacterEmotion: 2
-    talkingText: 'HELLOOOO!!! '
-  - CharacterName: Saki
-    CharacterEmotion: 4
+    CharacterEmotion: 6
     talkingText: 'EH. Hitagi senpai! '
-  - CharacterName: Hitagi
-    CharacterEmotion: 0
-    talkingText: 'Saki-kun! '
   - CharacterName: Tako
-    CharacterEmotion: 1
+    CharacterEmotion: 10
     talkingText: 'Oh, senpai! Long time no see! '
   - CharacterName: Hitagi
-    CharacterEmotion: 1
+    CharacterEmotion: 0
     talkingText: 'Eh, who are you? '
   - CharacterName: Tako
-    CharacterEmotion: 1
+    CharacterEmotion: 5
     talkingText: 'Hee.. i am Tako, I played Cajon in your band back in year 1. '
   - CharacterName: Hitagi
     CharacterEmotion: 3
@@ -442,24 +431,24 @@ MonoBehaviour:
     CharacterEmotion: 3
     talkingText: 'Anyway, Saki-kun, are you free Friday evening? '
   - CharacterName: Saki
-    CharacterEmotion: 1
+    CharacterEmotion: 6
     talkingText: 'EH... why? '
   - CharacterName: Hitagi
-    CharacterEmotion: 1
+    CharacterEmotion: 10
     talkingText: 'I need help for my band. My current guitarist won''t be able to
       comne to the performance. '
   - CharacterName: Saki
-    CharacterEmotion: 2
+    CharacterEmotion: 8
     talkingText: '(heart beats rises) '
   - CharacterName: Hitagi
     CharacterEmotion: 0
     talkingText: 'Idk anyone else. Plus, we already have a chemistry from our experience
       working together! '
-  - CharacterName: Tako
-    CharacterEmotion: 2
+  - CharacterName: Saki
+    CharacterEmotion: 8
     talkingText: '(Saki ku''s heart beating like crazy) '
   - CharacterName: Hitagi
-    CharacterEmotion: 1
+    CharacterEmotion: 4
     talkingText: 'Saki kun, please! '
   - CharacterName: Saki
     CharacterEmotion: 2
@@ -483,7 +472,7 @@ MonoBehaviour:
     CharacterEmotion: 0
     talkingText: 'Look just accept.. '
   - CharacterName: Hitagi
-    CharacterEmotion: 0
+    CharacterEmotion: 5
     talkingText: 'Chotto! '
   - CharacterName: Saki
     CharacterEmotion: 0
@@ -491,7 +480,7 @@ MonoBehaviour:
   - CharacterName: Hitagi
     CharacterEmotion: 0
     talkingText: 'I was talking to him, you know! '
-  - CharacterName: Saki
+  - CharacterName: Tako
     CharacterEmotion: 0
     talkingText: Ittai
   - CharacterName: Hitagi

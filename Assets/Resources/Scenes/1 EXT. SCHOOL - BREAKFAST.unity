@@ -919,7 +919,7 @@ MonoBehaviour:
     CharacterEmotion: 2
     talkingText: 'I don''t know what you are talking about, Mina. He''s so good,
       he does not need to work hard. He got straight A, last year right? '
-  - CharacterName: SAKI
+  - CharacterName: Saki
     CharacterEmotion: 4
     talkingText: 'Straight A- '
   - CharacterName: Tako

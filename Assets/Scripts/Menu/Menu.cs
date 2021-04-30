@@ -23,6 +23,7 @@ public class Menu : MonoBehaviour
 
     public void NewGame()
     {
+        SaveSystem.ResetData();
         SceneManager.LoadScene(1);
     }
     public void Continue()

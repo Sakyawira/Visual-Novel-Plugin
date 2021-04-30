@@ -352,9 +352,17 @@ MonoBehaviour:
   Branches:
   - Tags:
     - Breakfast
-    SceneName: 1 EXT. SCHOOL - BREAKFAST
+    SceneName: MainMenu
   - Tags: []
-    SceneName: 1 EXT. SCHOOL - NO TAGS
+    SceneName: MainMenu
+  - Tags:
+    - Sandwich
+    - Agree-Band
+    SceneName: MainMenu
+  - Tags:
+    - Breakfast
+    - Agree-Band
+    SceneName: MainMenu
 --- !u!4 &486540776
 Transform:
   m_ObjectHideFlags: 0
