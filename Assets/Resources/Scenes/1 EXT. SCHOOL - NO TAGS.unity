@@ -1291,7 +1291,7 @@ MonoBehaviour:
     - Sandwich
     SceneName: 2 INT. SCHOOL - SANDWICH
   - Tags: []
-    SceneName: 
+    SceneName: 2 INT. SCHOOL - NO TAGS
 --- !u!4 &2023139965
 Transform:
   m_ObjectHideFlags: 0

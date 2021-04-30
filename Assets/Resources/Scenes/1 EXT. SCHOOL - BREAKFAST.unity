@@ -1273,7 +1273,7 @@ MonoBehaviour:
     SceneName: 2 INT. SCHOOL - BREAKFAST, ASKED-MINA
   - Tags:
     - Breakfast
-    SceneName: 
+    SceneName: 2 INT. SCHOOL - BREAKFAST
 --- !u!4 &2023139965
 Transform:
   m_ObjectHideFlags: 0
