@@ -384,364 +384,194 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Saki
+  - CharacterName: Tako
     CharacterEmotion: 3
     talkingText: 'Bell rings. Break time. '
-  - CharacterName: Tako
+  - CharacterName: Saki
     CharacterEmotion: 2
     talkingText: 'Ah, finally! I am starving! '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 3
     talkingText: Wanna come with me to the cafetaria?
   - CharacterName: Saki
     CharacterEmotion: 0
     talkingText: I am still kinda full though...
-  - CharacterName: Saki
+  - CharacterName: Mina
     CharacterEmotion: 2
     talkingText: Door slammed open. Sounds of shoes knocking on the floor loudly
       and then a scream.
-  - CharacterName: Hitagi
+  - CharacterName: Mina
     CharacterEmotion: 2
     talkingText: 'SAKIIIIII-KUN!!!!! '
-  - CharacterName: Saki
+  - CharacterName: Mina
     CharacterEmotion: 0
     talkingText: 'HEEEEEE '
-  - CharacterName: Hitagi
+  - CharacterName: Saki
     CharacterEmotion: 2
     talkingText: 'HELLOOOO!!! '
   - CharacterName: Saki
     CharacterEmotion: 4
     talkingText: 'EH. Hitagi senpai! '
-  - CharacterName: Hitagi
+  - CharacterName: Mina
     CharacterEmotion: 0
     talkingText: 'Saki-kun! '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'Oh, senpai! Long time no see! '
-  - CharacterName: Hitagi
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'Eh, who are you? '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'Hee.. i am Tako, I played Cajon in your band back in year 1. '
-  - CharacterName: Hitagi
+  - CharacterName: Saki
     CharacterEmotion: 3
     talkingText: 'AHHH... TAMAGO - Kun!!! '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'It''s Tako! '
-  - CharacterName: Hitagi
+  - CharacterName: Saki
     CharacterEmotion: 3
     talkingText: 'Anyway, Saki-kun, are you free Friday evening? '
-  - CharacterName: Saki
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'EH... why? '
-  - CharacterName: Hitagi
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'I need help for my band. My current guitarist won''t be able to
       comne to the performance. '
-  - CharacterName: Saki
+  - CharacterName: Tako
     CharacterEmotion: 2
     talkingText: '(heart beats rises) '
-  - CharacterName: Hitagi
+  - CharacterName: Tako
     CharacterEmotion: 0
     talkingText: 'Idk anyone else. Plus, we already have a chemistry from our experience
       working together! '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 2
     talkingText: '(Saki ku''s heart beating like crazy) '
-  - CharacterName: Hitagi
+  - CharacterName: Saki
     CharacterEmotion: 1
     talkingText: 'Saki kun, please! '
-  - CharacterName: Saki
+  - CharacterName: Tako
     CharacterEmotion: 2
     talkingText: '(Saki ku''s heart is going to explode) '
   - CharacterName: Tako
     CharacterEmotion: 3
-    talkingText: (Tako took Saki's shoulders and whisper. )
+    talkingText: 'Tako took Saki''s shoulders and whisper. '
   - CharacterName: Tako
     CharacterEmotion: 3
     talkingText: 'She is kinda hot right. '
   - CharacterName: Saki
     CharacterEmotion: 0
     talkingText: 'Right '
-  - CharacterName: Tako
+  - CharacterName: Mina
     CharacterEmotion: 1
     talkingText: 'Why don''t you go out with her? '
-  - CharacterName: Saki
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'WHAT ._. '
-  - CharacterName: Tako
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'Look just accept.. '
-  - CharacterName: Hitagi
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'Chotto! '
-  - CharacterName: Saki
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'Hitagi pinched Tako''s ear. '
-  - CharacterName: Hitagi
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'I was talking to him, you know! '
-  - CharacterName: Saki
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: Ittai
-  - CharacterName: Hitagi
+  - CharacterName: 
     CharacterEmotion: 0
     talkingText: 'So, what is it Saki? Are you going to to go to the band or not? '
-  - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: I... um...
-  - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: (Someone walk in to their conversation)
-  - CharacterName: Mina
-    CharacterEmotion: 0
-    talkingText: Saki-kun?
-  - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: Eh, Mina? What are you doing here?
-  - CharacterName: Hitagi
-    CharacterEmotion: 0
-    talkingText: (Hah)
-  - CharacterName: Tako
-    CharacterEmotion: 0
-    talkingText: (Ohh..)
-  - CharacterName: Mina
-    CharacterEmotion: 4
-    talkingText: Umm...
-  - CharacterName: Mina
-    CharacterEmotion: 5
-    talkingText: It is a friend's birthday today. And she bought me some chips.
-  - CharacterName: Mina
-    CharacterEmotion: 5
-    talkingText: I am thinking that you might still be hungry.
-  - CharacterName: Mina
-    CharacterEmotion: 5
-    talkingText: So, I want to give some to you!
-  - CharacterName: Mina
-    CharacterEmotion: 1
-    talkingText: It is not that I am thinkng about you or anything! So don't get
-      any ideas!
-  - CharacterName: Saki
-    CharacterEmotion: 8
-    talkingText: Ah, I see! Thanks Mina!
-  - CharacterName: Hitagi
-    CharacterEmotion: 0
-    talkingText: ...
-  - CharacterName: Hitagi
-    CharacterEmotion: 0
-    talkingText: Saki-kun
-  - CharacterName: Saki
-    CharacterEmotion: 11
-    talkingText: Ah, yes senpai?
-  - CharacterName: Hitagi
-    CharacterEmotion: 9
-    talkingText: Who's the girl that dare interrupt our conversation?
-  - CharacterName: Saki
-    CharacterEmotion: 0
-    talkingText: She is Mina! She is my...
-  - CharacterName: Saki
-    CharacterEmotion: 6
-    talkingText: My... um..
-  - CharacterName: Mina
-    CharacterEmotion: 11
-    talkingText: Best friend!
-  - CharacterName: Saki
-    CharacterEmotion: 8
-    talkingText: Ah yes! She is a best friend of mine!
-  - CharacterName: Tako
-    CharacterEmotion: 3
-    talkingText: They were boyfriend and girlfriend.
-  - CharacterName: Mina
-    CharacterEmotion: 6
-    talkingText: EHHH
-  - CharacterName: Saki
-    CharacterEmotion: 5
-    talkingText: Oyyy...  Tako!
-  - CharacterName: Tako
-    CharacterEmotion: 10
-    talkingText: What? That's the truth!
-  - CharacterName: Hitagi
-    CharacterEmotion: 11
-    talkingText: Ah... is that so?
-  - CharacterName: Hitagi
-    CharacterEmotion: 10
-    talkingText: Nice to meet you, Saki's ex!
-  - CharacterName: Mina
-    CharacterEmotion: 8
-    talkingText: Nice to meet you!
-  - CharacterName: Hitagi
-    CharacterEmotion: 5
-    talkingText: Anyway Saki-kun, you haven't answered my question~
-  - CharacterName: Hitagi
-    CharacterEmotion: 5
-    talkingText: Are you free Friday night or not?
-  - CharacterName: Saki
-    CharacterEmotion: 6
-    talkingText: Eh... um...
-  - CharacterName: Mina
-    CharacterEmotion: 6
-    talkingText: Friday night?
-  - CharacterName: Mina
-    CharacterEmotion: 6
-    talkingText: Could it be that you guys are?
-  - CharacterName: Saki
-    CharacterEmotion: 8
-    talkingText: Eh... no.. no.. Hitagi senpai is just...
-  - CharacterName: Hitagi
-    CharacterEmotion: 10
-    talkingText: I am his current girlfriend!
-  - CharacterName: Saki
-    CharacterEmotion: 6
-    talkingText: Eh... what!?
-  - CharacterName: Mina
-    CharacterEmotion: 10
-    talkingText: Ah, is that so?
-  - CharacterName: Mina
-    CharacterEmotion: 2
-    talkingText: Saki-kun, I'm trully happy for you!
-  - CharacterName: Saki
-    CharacterEmotion: 8
-    talkingText: EEhh... eeehh..
-  - CharacterName: Hitagi
-    CharacterEmotion: 9
-    talkingText: ...
-  - CharacterName: Hitagi
-    CharacterEmotion: 0
-    talkingText: (Hitagi put her arms around Saki's arm)
-  - CharacterName: Saki
-    CharacterEmotion: 6
-    talkingText: ...
-  - CharacterName: Saki
-    CharacterEmotion: 5
-    talkingText: ...
-  - CharacterName: Hitagi
-    CharacterEmotion: 10
-    talkingText: Yup! We are very happy together, and we are going to band together
-      this Friday. Right, Saki-kun?
   Choices:
-  - ChoiceText: Right
+  - ChoiceText: No
     DialogueBranch:
     - CharacterName: Saki
-      CharacterEmotion: 8
-      talkingText: Yeah
+      CharacterEmotion: 0
+      talkingText: 'Nah. I think I want to just chill at home that day. '
     - CharacterName: Tako
-      CharacterEmotion: 8
-      talkingText: Crap
+      CharacterEmotion: 2
+      talkingText: 'Huh!? '
+    - CharacterName: Saki
+      CharacterEmotion: 1
+      talkingText: 'Yeah, I''m sorry. It''s I have been through a lot lately. '
+    - CharacterName: Tako
+      CharacterEmotion: 2
+      talkingText: 'Is that so? '
     - CharacterName: Mina
+      CharacterEmotion: 2
+      talkingText: 'Hmmm... okay, I guess it can''t be helped. '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Well, then, I gotta ask other people. See you! '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'See you! '
+    - CharacterName: Tako
+      CharacterEmotion: 2
+      talkingText: 'Hitagi left. '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'What was that? '
+    - CharacterName: Tako
       CharacterEmotion: 3
-      talkingText: Great!
+      talkingText: 'What '
+    - CharacterName: Saki
+      CharacterEmotion: 3
+      talkingText: 'I cant believe you are ruining your chance! '
+    - CharacterName: Tako
+      CharacterEmotion: 2
+      talkingText: Hey, let's go, we will be late!
+    Tag: 
+  - ChoiceText: Yes
+    DialogueBranch:
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Fine. I will do it... '
     - CharacterName: Mina
-      CharacterEmotion: 11
-      talkingText: Okay then! I'm going to go now!
+      CharacterEmotion: 0
+      talkingText: 'Yay! See you at the auditorium on Thursday 7:00 pm! We will have
+        practice!  '
     - CharacterName: Mina
       CharacterEmotion: 0
-      talkingText: (Mina left)
-    - CharacterName: Hitagi
-      CharacterEmotion: 10
-      talkingText: It is settled then. I will see you Friday night!
-    - CharacterName: Saki
-      CharacterEmotion: 6
-      talkingText: Ehhh...
-    - CharacterName: Saki
-      CharacterEmotion: 6
-      talkingText: Hitagi left.
-    - CharacterName: Tako
-      CharacterEmotion: 5
-      talkingText: What the...
-    - CharacterName: Tako
-      CharacterEmotion: 5
-      talkingText: That's... I hope you are not being manipulated
+      talkingText: Okay
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: 'Hitagi left. '
+    - CharacterName: Mina
+      CharacterEmotion: 0
+      talkingText: 'O, you might be on your way to winning a jackpot! '
     - CharacterName: Saki
       CharacterEmotion: 0
-      talkingText: I'm sure Hitagi senpai is not someone like that.
+      talkingText: 'I don''t know how to feel about what you just said -.- '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'She is like an older sister to me '
     - CharacterName: Tako
       CharacterEmotion: 0
-      talkingText: Hopefully.
+      talkingText: 'That''s even hotter!  '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Why would you reject her offer? '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: What??!
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'Dud! Do you even still like her? '
+    - CharacterName: Saki
+      CharacterEmotion: 0
+      talkingText: 'Tako, you degenerate '
+    - CharacterName: Tako
+      CharacterEmotion: 0
+      talkingText: 'AHAHAHHAHAHAHAHHAHHAHHAHAH '
     Tag: Agree-Band
-  - ChoiceText: Push Hitagi away
-    DialogueBranch:
-    - CharacterName: Saki
-      CharacterEmotion: 5
-      talkingText: Hitagi-san, please get off me.
-    - CharacterName: Hitagi
-      CharacterEmotion: 6
-      talkingText: EEeehh
-    - CharacterName: Saki
-      CharacterEmotion: 5
-      talkingText: I don't recall we are ever a couple.
-    - CharacterName: Hitagi
-      CharacterEmotion: 6
-      talkingText: Huh...
-    - CharacterName: Hitagi
-      CharacterEmotion: 0
-      talkingText: ...
-    - CharacterName: Hitagi
-      CharacterEmotion: 4
-      talkingText: I was just trying to help.
-    - CharacterName: Saki
-      CharacterEmotion: 0
-      talkingText: (Hitagi left.)
-    - CharacterName: Saki
-      CharacterEmotion: 6
-      talkingText: Eh... senpai!
-    - CharacterName: Tako
-      CharacterEmotion: 5
-      talkingText: Saki-kun, don't chase her.
-    - CharacterName: Saki
-      CharacterEmotion: 8
-      talkingText: A, yeah...
-    - CharacterName: Mina
-      CharacterEmotion: 8
-      talkingText: What is going on?
-    - CharacterName: Saki
-      CharacterEmotion: 8
-      talkingText: Honestly, I have no idea.
-    - CharacterName: Saki
-      CharacterEmotion: 3
-      talkingText: Thanks for the chips btw!
-    - CharacterName: Mina
-      CharacterEmotion: 10
-      talkingText: You are welcome!
-    - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: Btw Mina, there is something I didn't get to ask you earlier this
-        morning!
-    - CharacterName: Mina
-      CharacterEmotion: 2
-      talkingText: Oh? What is it?
-    - CharacterName: Saki
-      CharacterEmotion: 0
-      talkingText: Do you wanna go out this Friday?
-    - CharacterName: Mina
-      CharacterEmotion: 6
-      talkingText: Oh... um...
-    - CharacterName: Mina
-      CharacterEmotion: 11
-      talkingText: Sure!
-    - CharacterName: Mina
-      CharacterEmotion: 11
-      talkingText: (Bell rings)
-    - CharacterName: Mina
-      CharacterEmotion: 2
-      talkingText: See you then!
-    - CharacterName: Saki
-      CharacterEmotion: 10
-      talkingText: See you!
-    - CharacterName: Saki
-      CharacterEmotion: 2
-      talkingText: (Mina left)
-    - CharacterName: Tako
-      CharacterEmotion: 11
-      talkingText: Yo! I am proud of you dude!
-    - CharacterName: Saki
-      CharacterEmotion: 3
-      talkingText: Thanks man!
-    - CharacterName: Tako
-      CharacterEmotion: 2
-      talkingText: Alright, class about to start again.
-    Tag: Asked-Mina
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 2131649166}
   choiceBox: {fileID: 1272061643}
