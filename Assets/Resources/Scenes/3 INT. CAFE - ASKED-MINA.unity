@@ -604,7 +604,7 @@ MonoBehaviour:
   DialogueLines:
   - CharacterName: Saki
     CharacterEmotion: 2
-    talkingText: ....
+    talkingText: Fuuhh... I am 10 minutes early.
   - CharacterName: Mina
     CharacterEmotion: 2
     talkingText: Oh, Saki-kun! You are here already!

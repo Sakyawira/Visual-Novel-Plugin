@@ -352,9 +352,18 @@ MonoBehaviour:
   Branches:
   - Tags:
     - Breakfast
-    SceneName: 1 EXT. SCHOOL - BREAKFAST
-  - Tags: []
-    SceneName: 1 EXT. SCHOOL - NO TAGS
+    - Asked-Mina
+    - Agree-Band
+    SceneName: 3 INT. CAFE - ASKED-MINA
+  - Tags:
+    - Breakfast
+    - Sandwich
+    - Agree-Band
+    SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
+  - Tags:
+    - Breakfast
+    - Agree-Band
+    SceneName: 3 INT. HOUSE - NO TAGS-BREAKFAST
 --- !u!4 &486540776
 Transform:
   m_ObjectHideFlags: 0
@@ -600,45 +609,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f02076ecc075c45a87723a7872d11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterDB: {fileID: 11400000, guid: c1f73c3e35bdbcf4dbe869e4460c8dab, type: 2}
+  CharacterDB: {fileID: 11400000, guid: 88d95a5787531734eb4575a963ec56ab, type: 2}
   DialogueLines:
-  - CharacterName: Nicole
-    CharacterEmotion: 2
-    talkingText: Good morning, Onii-san!
-  - CharacterName: James
-    CharacterEmotion: 2
-    talkingText: Ah, good morning!
-  - CharacterName: Nicole
-    CharacterEmotion: 1
-    talkingText: Hurry up, isn't this your first day of school!
-  - CharacterName: James
+  - CharacterName: Saki
+    CharacterEmotion: 7
+    talkingText: Where is Hitagi senpai? Iam so tired.
+  - CharacterName: Hitagi
     CharacterEmotion: 0
-    talkingText: Ah, right!
-  - CharacterName: James
-    CharacterEmotion: 3
-    talkingText: I'm going to go then...
-  - CharacterName: Nicole
+    talkingText: Sa-saki-kun!
+  - CharacterName: Saki
+    CharacterEmotion: 7
+    talkingText: Oh...
+  - CharacterName: Hitagi
+    CharacterEmotion: 11
+    talkingText: Ummm...
+  - CharacterName: Hitagi
+    CharacterEmotion: 8
+    talkingText: Turns out the other band members can't come tonight.
+  - CharacterName: Saki
+    CharacterEmotion: 5
+    talkingText: Wait, what...
+  - CharacterName: Hitagi
+    CharacterEmotion: 8
+    talkingText: Yeah, I'm so sorry!
+  - CharacterName: Saki
     CharacterEmotion: 0
-    talkingText: Wait, at least eat some break fast!
-  Choices:
-  - ChoiceText: Eat breakfast
-    DialogueBranch:
-    - CharacterName: James
-      CharacterEmotion: 2
-      talkingText: Okay, I will have some!
-    - CharacterName: Nicole
-      CharacterEmotion: 2
-      talkingText: Yay! I cooked this one just for you!
-    Tag: Breakfast
-  - ChoiceText: Leave immediately
-    DialogueBranch:
-    - CharacterName: James
-      CharacterEmotion: 3
-      talkingText: Sorry, I gotta go now...
-    - CharacterName: Nicole
-      CharacterEmotion: 4
-      talkingText: Eh, nii nii...
-    Tag: 
+    talkingText: Okay, whatever.... I have someplace to go.
+  - CharacterName: Hitagi
+    CharacterEmotion: 10
+    talkingText: I'm sorry.
+  Choices: []
   TextBGM: {fileID: 8300000, guid: c61f3432f1b850244b9c2a36dfdc7e84, type: 3}
   dialogueBox: {fileID: 837042397}
   choiceBox: {fileID: 1103474707}
