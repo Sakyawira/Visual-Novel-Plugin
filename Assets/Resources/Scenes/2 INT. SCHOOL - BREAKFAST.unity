@@ -387,77 +387,74 @@ MonoBehaviour:
   - CharacterName: Tako
     CharacterEmotion: 3
     talkingText: 'Bell rings. Break time. '
-  - CharacterName: Saki
+  - CharacterName: Tako
     CharacterEmotion: 2
     talkingText: 'Ah, finally! I am starving! '
-  - CharacterName: Mina
+  - CharacterName: Tako
     CharacterEmotion: 3
     talkingText: Wanna come with me to the cafetaria?
   - CharacterName: Saki
     CharacterEmotion: 0
     talkingText: I am still kinda full though...
-  - CharacterName: Mina
+  - CharacterName: Saki
     CharacterEmotion: 2
     talkingText: Door slammed open. Sounds of shoes knocking on the floor loudly
       and then a scream.
-  - CharacterName: Mina
-    CharacterEmotion: 2
+  - CharacterName: Hitagi
+    CharacterEmotion: 10
     talkingText: 'SAKIIIIII-KUN!!!!! '
-  - CharacterName: Mina
-    CharacterEmotion: 0
-    talkingText: 'HEEEEEE '
   - CharacterName: Saki
-    CharacterEmotion: 2
+    CharacterEmotion: 6
+    talkingText: 'HEEEEEE '
+  - CharacterName: Hitagi
+    CharacterEmotion: 10
     talkingText: 'HELLOOOO!!! '
   - CharacterName: Saki
-    CharacterEmotion: 4
+    CharacterEmotion: 8
     talkingText: 'EH. Hitagi senpai! '
-  - CharacterName: Mina
-    CharacterEmotion: 0
-    talkingText: 'Saki-kun! '
-  - CharacterName: Mina
+  - CharacterName: Tako
     CharacterEmotion: 1
     talkingText: 'Oh, senpai! Long time no see! '
-  - CharacterName: Mina
+  - CharacterName: Hitagi
     CharacterEmotion: 1
     talkingText: 'Eh, who are you? '
-  - CharacterName: Mina
-    CharacterEmotion: 1
+  - CharacterName: Tako
+    CharacterEmotion: 4
     talkingText: 'Hee.. i am Tako, I played Cajon in your band back in year 1. '
-  - CharacterName: Saki
+  - CharacterName: Hitagi
     CharacterEmotion: 3
     talkingText: 'AHHH... TAMAGO - Kun!!! '
-  - CharacterName: Mina
-    CharacterEmotion: 1
+  - CharacterName: Tako
+    CharacterEmotion: 5
     talkingText: 'It''s Tako! '
-  - CharacterName: Saki
+  - CharacterName: Hitagi
     CharacterEmotion: 3
     talkingText: 'Anyway, Saki-kun, are you free Friday evening? '
-  - CharacterName: Mina
+  - CharacterName: Saki
     CharacterEmotion: 1
     talkingText: 'EH... why? '
-  - CharacterName: Mina
-    CharacterEmotion: 1
+  - CharacterName: Hitagi
+    CharacterEmotion: 2
     talkingText: 'I need help for my band. My current guitarist won''t be able to
       comne to the performance. '
-  - CharacterName: Tako
+  - CharacterName: Saki
     CharacterEmotion: 2
     talkingText: '(heart beats rises) '
-  - CharacterName: Tako
+  - CharacterName: Hitagi
     CharacterEmotion: 0
     talkingText: 'Idk anyone else. Plus, we already have a chemistry from our experience
       working together! '
-  - CharacterName: Mina
-    CharacterEmotion: 2
-    talkingText: '(Saki ku''s heart beating like crazy) '
   - CharacterName: Saki
-    CharacterEmotion: 1
+    CharacterEmotion: 10
+    talkingText: '(Saki ku''s heart beating like crazy) '
+  - CharacterName: Hitagi
+    CharacterEmotion: 11
     talkingText: 'Saki kun, please! '
-  - CharacterName: Tako
+  - CharacterName: Saki
     CharacterEmotion: 2
-    talkingText: '(Saki ku''s heart is going to explode) '
+    talkingText: '(Saki kun''s heart is going to explode) '
   - CharacterName: Tako
-    CharacterEmotion: 3
+    CharacterEmotion: 9
     talkingText: 'Tako took Saki''s shoulders and whisper. '
   - CharacterName: Tako
     CharacterEmotion: 3
@@ -465,29 +462,29 @@ MonoBehaviour:
   - CharacterName: Saki
     CharacterEmotion: 0
     talkingText: 'Right '
-  - CharacterName: Mina
-    CharacterEmotion: 1
+  - CharacterName: Tako
+    CharacterEmotion: 11
     talkingText: 'Why don''t you go out with her? '
-  - CharacterName: 
+  - CharacterName: Saki
     CharacterEmotion: 0
     talkingText: 'WHAT ._. '
-  - CharacterName: 
-    CharacterEmotion: 0
+  - CharacterName: Tako
+    CharacterEmotion: 3
     talkingText: 'Look just accept.. '
-  - CharacterName: 
+  - CharacterName: Hitagi
     CharacterEmotion: 0
     talkingText: 'Chotto! '
-  - CharacterName: 
+  - CharacterName: Hitagi
     CharacterEmotion: 0
-    talkingText: 'Hitagi pinched Tako''s ear. '
-  - CharacterName: 
-    CharacterEmotion: 0
+    talkingText: '(Hitagi pinched Tako''s ear.) '
+  - CharacterName: Hitagi
+    CharacterEmotion: 5
     talkingText: 'I was talking to him, you know! '
-  - CharacterName: 
-    CharacterEmotion: 0
+  - CharacterName: Tako
+    CharacterEmotion: 6
     talkingText: Ittai
-  - CharacterName: 
-    CharacterEmotion: 0
+  - CharacterName: Hitagi
+    CharacterEmotion: 5
     talkingText: 'So, what is it Saki? Are you going to to go to the band or not? '
   Choices:
   - ChoiceText: No
