@@ -6,7 +6,7 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
 
     string gameId = "4058630";
     public string myPlacementId = "rewardedVideo";
-    bool testMode = true;
+    bool testMode = false;
 
     // Initialize the Ads listener and service:
     void Start()
